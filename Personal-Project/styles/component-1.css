@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.component1 {
+  width: 100%;
+  height: 1280px;
+  background-color: #222533;
+  margin: 0;
+}
+
+.component1 .content {
+  width: 1052;
+  height: 341.2px;
+  margin-top: 445px;
+}
+
+.component1 .content h3, .component1 .content h1 {
+  text-align: center;
+}
+
+.component1 .content h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff;
+  padding-top: 3px;
+  font-family: "Lato", sans-serif;
+}
+
+.component1 .content h3:first-child {
+  letter-spacing: 9px;
+  line-height: 19px;
+  height: 36px;
+  margin-top: 24px;
+}
+
+.component1 .content h3:first-child span {
+  color: #1abc9c;
+}
+
+.component1 .content h1 {
+  font-family: "Lato Black", sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 19px;
+  color: #ffffff;
+  height: 80px;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: -10px;
+}
+
+.component1 .content h3:nth-child(3) {
+  line-height: 36px;
+  height: 45px;
+  font-weight: 100;
+  margin: -12px 0 0 -11px;
+}
+
+.component1 .content .divbuttons, .component1 .content .divrodeo {
+  display: flex;
+  justify-content: center;
+}
+
+.component1 .content .divbuttons {
+  margin-top: 35px;
+}
+
+.component1 .content .divbuttons .buttons {
+  display: flex;
+  width: 420px;
+  height: 60px;
+  justify-content: space-between;
+  margin-right: 12px;
+}
+
+.component1 .content .divbuttons .buttons button {
+  height: 100%;
+  width: 200px;
+  border: 2px solid white;
+  font-family: "Lato Black", sans-serif;
+  font-size: 18px;
+  border-radius: 3px;
+  color: white;
+  background-color: inherit;
+}
+
+.component1 .content .divbuttons .buttons button:hover {
+  background-color: #1ABC9C;
+  cursor:pointer;
+  border: none;
+}
+
+.component1 .content .divrodeo {
+  margin-top: 39px;
+}
+
+.component1 .content .divrodeo .rodeo {
+  display: flex;
+  justify-content: space-between;
+  width: 86px;
+  height: 18px;
+  margin-right: 11px;
+}
+
+.component1 .content .divrodeo .rodeo .round {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.component1 .content .divrodeo .rodeo .round .dot{
+  width: 8px;
+  height: 8px;
+  margin: 3px 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.component1 .content .divrodeo .rodeo .round:hover{
+   cursor:pointer;
+}
+.component1 .content .divrodeo .rodeo .round:hover .dot{
+  background-color: #1ABC9C;
+}
+
+@media only screen and (max-width: 1279px){
+  .component1{
+    height: 1000px;
+  }
+  .component1 .content {
+    width: 1052;
+    height: 600px;
+    margin-top: 325px;
+  }
+  .component1 .content h1 {  
+    height: 160px;
+    line-height: 60px;
+    padding-top: 15px;
+    margin-top: 0px;
+  }
+  .component1 .content h3:nth-child(3) {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 1023px){
+  .component1 .content {
+    width: 1052;
+    height: 700px;
+    margin-top: 255px;
+  }
+  .component1 .content h1 {  
+    height: 160px;
+    width: 100%;
+    line-height: 60px;
+    padding-top: 15px;
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 1023px){
+  .component1 .content {
+    width: 1052;
+    height: 700px;
+    margin-top: 255px;
+  }
+  .component1 .content h1 {  
+    height: 160px;
+    width: 100%;
+    line-height: 60px;
+    padding-top: 15px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .component1 .content {
+    width: 1052;
+    height: 700px;
+    margin-top: 155px;
+  }
+  
+  .component1 .content h3:first-child {
+    letter-spacing: 9px;
+    line-height: 30px;
+    height: 65px;
+  }
+  
+  .component1 .content h1 {  
+    height: 270px;
+    width: 100%;
+    line-height: 60px;
+  }
+  .component1 .content .divbuttons .buttons button{
+    width: 150px;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+  .component1 .content h3:nth-child(3) {
+    height: 110px;
+  }
+}

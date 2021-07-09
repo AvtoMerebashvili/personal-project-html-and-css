@@ -1,0 +1,80 @@
+.component2{
+    height: 90px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component2 .content{
+    display: grid;
+    width: 1100px;
+    grid-template-rows: 48.5px;
+    grid-template-columns: 311px 86px 78px 105px 76px 79px 86px 121px 104px auto;
+    margin-right:82px;
+    align-items: center;
+}
+.component2 .content .icon img{
+    float: left;
+    margin: 1px 0 0 1px;
+}
+.component2 .content .icon h1{
+    font-family: "Lato", sans-serif;
+    font-size: 35.69px;
+    color: #34495E;
+    height: 43px;
+    float: left;
+    margin:2px 0 0 13px;
+}
+
+.component2 .content p{
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: #A1B1BC;
+}
+.component2 .content p:hover{
+    cursor: pointer;
+    color: #8f989e;
+}
+
+@media only screen and (max-width: 1279px){
+    .component2 .content{
+        width: 700px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 311px 86px 88px 105px 76px 79px;
+    }
+    .component2 .content .icon{
+        grid-row: 1 / span 2;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .component2 .content{
+        width: 660px;
+        grid-template-columns: 270px 86px 88px 105px 76px 79px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .component2{
+        height: auto;
+    }
+    .component2 .content{
+        width: 100%;
+        height: 200px;
+        grid-template-rows: 2fr repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2%;
+        height: 155px;
+    }
+    .component2 .content .icon{
+        grid-column:  span 3;
+        display: flex;
+        justify-content: center;
+    }
+    .component2 .content p{
+        text-align: center;
+    }
+    
+}
