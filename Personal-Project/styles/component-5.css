@@ -47,14 +47,17 @@
     border-radius: 50%;
     margin: 3px 0 0 26px;
 }
-.component5 .content .infogram .circle:nth-child(2){
+.component5 .content .infogram .circle:hover{
     background-color: #21C2F8;
+    cursor: pointer;
 }
-.component5 .content .infogram .circle:nth-child(2) .whitecircle .graycircle{
+.component5 .content .infogram .circle:hover .whitecircle .graycircle{
     background-color: #2C3E50;
+    cursor: pointer;
 }
-.component5 .content .infogram .circle:nth-child(2) .whitecircle .graycircle p{
+.component5 .content .infogram .circle:hover .whitecircle .graycircle p{
     color: #FFFFFF;
+    cursor: pointer;
 }
 .component5 .content .infogram .circle .whitecircle{
     width: 188.06px;
