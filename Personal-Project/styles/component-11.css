@@ -34,7 +34,7 @@
 .component11 .content .item {
     display: grid;
     grid-template-columns: 43px auto;
-    grid-template-rows: 38px 76px 36px;
+    grid-template-rows: 38px 74px 36px;
 }
 
 .component11 .content .item p {
@@ -60,6 +60,7 @@
     font-size: 15px;
     color: #1ABC9C;
     font-weight: bold;
+    margin-left: -1px;
 }
 .component11 .content .ItemPgreen:hover{
     cursor: pointer;
@@ -71,6 +72,7 @@
     font-size: 36px;
     color: #2C3E50;
     font-weight: 300;
+    margin-left: -2px;
 }
 
 .component11 .content .downblock {
