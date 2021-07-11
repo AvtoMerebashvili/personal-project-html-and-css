@@ -69,6 +69,18 @@
     color: #686D80;
 }
 
+.component10 .content .main .table .column .cell .red{
+    color: #EF584D ;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.component10 .content .main .table .column .cell .green{
+    color:#7BC200;
+    font-weight: 400;
+    font-size: 15px;
+}
+
 .component10 .content .main .table .order .cell:nth-child(2) {
     background-color: #34495E;
 }
@@ -257,6 +269,7 @@
         font-weight: bold;
         word-wrap: break-word;
     }
+    
     .component10 .content .main .table .order h2 {
         font-size: 14px;
     }
