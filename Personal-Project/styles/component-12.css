@@ -32,31 +32,37 @@
     line-height: 1.7;
     word-spacing: -0.19px;
 }
-.component12 .content .categories{
+
+.component12 .content .categories {
     display: grid;
     grid-template-columns: 400px 400px 385px;
     grid-template-rows: 249px 295px;
     margin-top: 49px;
 }
-.component12 .content .categories .category{
+
+.component12 .content .categories .category {
     display: grid;
     grid-template-columns: 189px 25px 169px;
     grid-template-rows: 115px 30px 30px 24px;
 }
-.component12 .content .categories .category:nth-child(5),.component12 .content .categories .category:nth-child(6) {
+
+.component12 .content .categories .category:nth-child(5), .component12 .content .categories .category:nth-child(6) {
     grid-template-rows: 89px 30px 30px 24px;
 }
-.component12 .content .categories .category .quarter{
+
+.component12 .content .categories .category .quarter {
     width: 170px;
     height: 200px;
     background-color: #CCCCCC;
     grid-row: 1/ span 4;
 }
-.component12 .content .categories .category .quarter:hover{
+
+.component12 .content .categories .category .quarter:hover {
     background-color: #2C3E50;
     cursor: pointer;
 }
-.component12 .content .categories .category h3{
+
+.component12 .content .categories .category h3 {
     font-size: 18px;
     font-weight: bold;
     color: #2C3E50;
@@ -65,11 +71,64 @@
     line-height: 1.5;
     margin-top: -6px;
 }
-.component12 .content .categories .category p{
+
+.component12 .content .categories .category p {
     font-size: 14px;
     text-align: left;
     color: #A1B1BC;
 }
-.component12 .content .categories .category i{
+
+.component12 .content .categories .category i {
     color: #1ABC9C;
+}
+
+@media only screen and (max-width: 1279px) {
+    .component12 .content {
+        width: 90%;
+        max-width: 1170px;
+    }
+    .component12 .content .categories {
+        grid-template-columns: 33% 33% 33%;
+    }
+    .component12 .content .categories .category {
+        display: grid;
+        grid-template-columns: minmax(50%,176px) 6% 37%;
+        grid-template-rows: 136px 20px 20px 24px;
+    }
+    .component12 .content .categories .category:nth-child(5), .component12 .content .categories .category:nth-child(6) {
+        grid-template-rows: 128px 20px 20px 24px;
+    }
+    .component12 .content .categories .category h3 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .component12 {
+        height: auto;
+    }
+    .component12 .content {
+        margin-bottom: 3%;
+    }
+    .component12 .content .categories {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 249px);
+        justify-items: center;
+    }
+    .component12 .content .categories .category {
+        display: grid;
+        grid-template-columns: 189px 25px 122px;
+        grid-template-rows: 115px 30px 30px 24px
+    }
+    .component12 .content .categories .category:nth-child(5), .component12 .content .categories .category:nth-child(6) {
+        grid-template-rows: 89px 30px 30px 24px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .component12 .content .categories {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 249px);
+        justify-items: center;
+    }
 }
