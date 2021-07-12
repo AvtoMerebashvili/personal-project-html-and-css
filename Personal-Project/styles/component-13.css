@@ -3,7 +3,7 @@
     height: 770px;
     display: flex;
     justify-content: center;
-    background-color: #222533;
+    background-color: #2F313C;
 }
 
 .component13 .content {
@@ -128,7 +128,7 @@
 .component13 .content .rightbar .item .square:hover .hover {
     width: 115px;
     height: 115px;
-    background-color: #222533;
+    background-color: #2F313C;
     cursor: pointer;
     display: flex;
     justify-content: center;
