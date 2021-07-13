@@ -26,6 +26,7 @@
     height: 43px;
     float: left;
     margin:2px 0 0 13px;
+    overflow-y: hidden;
 }
 
 .component2 .content p{
