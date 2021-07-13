@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
 .component1 {
   width: 100%;
   height: 1280px;
@@ -90,8 +83,12 @@
 
 .component1 .content .divbuttons .buttons button:hover {
   background-color: #1ABC9C;
-  cursor:pointer;
+  cursor: pointer;
   border: none;
+}
+
+.component1 .content .divbuttons .buttons button:focus{
+  background-color: #1ABC9C;
 }
 
 .component1 .content .divrodeo {
@@ -106,28 +103,42 @@
   margin-right: 11px;
 }
 
+.component1 .content .divrodeo .rodeo input {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
 .component1 .content .divrodeo .rodeo .round {
   width: 14px;
   height: 14px;
   background-color: #ffffff;
   border-radius: 50%;
 }
-.component1 .content .divrodeo .rodeo .round .dot{
+
+.component1 .content .divrodeo .rodeo .round .dot {
   width: 8px;
   height: 8px;
   margin: 3px 3px;
   background-color: #ffffff;
   border-radius: 50%;
 }
-.component1 .content .divrodeo .rodeo .round:hover{
-   cursor:pointer;
+
+.component1 .content .divrodeo .rodeo .round:hover {
+  cursor: pointer;
 }
-.component1 .content .divrodeo .rodeo .round:hover .dot{
+
+.component1 .content .divrodeo .rodeo .round:hover .dot {
   background-color: #1ABC9C;
 }
 
-@media only screen and (max-width: 1279px){
-  .component1{
+.component1 .content .divrodeo .rodeo #fm1:checked~.round #fmdot1, .component1 .content .divrodeo .rodeo #fm2:checked~.round #fmdot2, 
+.component1 .content .divrodeo .rodeo #fm3:checked~.round #fmdot3, .component1 .content .divrodeo .rodeo #fm4:checked~.round #fmdot4 {
+  background-color: #1ABC9C;
+}
+
+@media only screen and (max-width: 1279px) {
+  .component1 {
     height: 1000px;
   }
   .component1 .content {
@@ -135,7 +146,7 @@
     height: 600px;
     margin-top: 325px;
   }
-  .component1 .content h1 {  
+  .component1 .content h1 {
     height: 160px;
     line-height: 60px;
     padding-top: 15px;
@@ -146,27 +157,13 @@
   }
 }
 
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1023px) {
   .component1 .content {
     width: 1052;
     height: 700px;
     margin-top: 255px;
   }
-  .component1 .content h1 {  
-    height: 160px;
-    width: 100%;
-    line-height: 60px;
-    padding-top: 15px;
-    margin-top: 0px;
-  }
-}
-@media only screen and (max-width: 1023px){
-  .component1 .content {
-    width: 1052;
-    height: 700px;
-    margin-top: 255px;
-  }
-  .component1 .content h1 {  
+  .component1 .content h1 {
     height: 160px;
     width: 100%;
     line-height: 60px;
@@ -175,25 +172,38 @@
   }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 1023px) {
+  .component1 .content {
+    width: 1052;
+    height: 700px;
+    margin-top: 255px;
+  }
+  .component1 .content h1 {
+    height: 160px;
+    width: 100%;
+    line-height: 60px;
+    padding-top: 15px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .component1 .content {
     width: 1052;
     height: 700px;
     margin-top: 155px;
   }
-  
   .component1 .content h3:first-child {
     letter-spacing: 9px;
     line-height: 30px;
     height: 65px;
   }
-  
-  .component1 .content h1 {  
+  .component1 .content h1 {
     height: 270px;
     width: 100%;
     line-height: 60px;
   }
-  .component1 .content .divbuttons .buttons button{
+  .component1 .content .divbuttons .buttons button {
     width: 150px;
     margin: 0 auto;
     font-size: 15px;

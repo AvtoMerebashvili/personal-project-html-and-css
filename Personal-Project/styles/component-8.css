@@ -91,6 +91,12 @@
 .component8 .content form label:hover{
     cursor: pointer;
 }
+.component8 .content form label:hover .green{
+    width: 6px;
+    height: 6px;
+    background-color: #1ABC9C;
+    border-radius: 50%;
+}
 .component8 .content form #i1:checked~label #inp1{
     width: 6px;
     height: 6px;
