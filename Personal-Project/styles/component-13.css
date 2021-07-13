@@ -30,14 +30,16 @@
 .component13 .content h1 {
     font-size: 36px;
     font-weight: 300;
-    
 }
-.component13 .content .leftbar h1{
+
+.component13 .content .leftbar h1 {
     margin-left: -3px;
 }
-.component13 .content .rightbar h1{
+
+.component13 .content .rightbar h1 {
     margin-left: -1px;
 }
+
 .component13 .content p {
     font-size: 14px;
     line-height: 1.75;
@@ -45,13 +47,13 @@
 
 .component13 .content .leftbar .icons {
     display: grid;
-    grid-template-columns: 44px 45px 49px 52px 45px 49px 51px 46px 48px 50px 20px;
+    grid-template-columns: 43px 49px 45px 51px 46px 49px 47px 50px 48px 50px 20px;
     grid-template-rows: 1fr;
 }
 
 .component13 .content .leftbar .icons i {
     color: white;
-    font-size: 24px;
+    font-size: 27px;
 }
 
 .component13 .content .leftbar .icons i:hover {
@@ -200,7 +202,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .component13{
+    .component13 {
         height: auto;
     }
     .component13 .content {
@@ -209,11 +211,10 @@
         grid-template-rows: 1fr 1fr;
         margin-bottom: 20px;
     }
-    .component13 .content h1, .component13 .content .leftbar>p{
+    .component13 .content h1, .component13 .content .leftbar>p {
         text-align: center;
     }
-    
-    .component13 .content .rightbar .dots{
+    .component13 .content .rightbar .dots {
         margin: auto;
     }
 }
