@@ -106,7 +106,7 @@
 .component13 .content .rightbar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 85px repeat(2, 166px) 158px auto;
+    grid-template-rows: 86px repeat(2, 165px) 158px auto;
 }
 
 .component13 .content .rightbar .item {
