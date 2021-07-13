@@ -10,7 +10,7 @@
 .component11 .content {
     width: 1175px;
     height: auto;
-    margin: 99px 4px 0 0;
+    margin: 101px 4px 0 0;
 }
 
 .component11 .content p, .component11 .content h1 {
@@ -65,7 +65,8 @@
     margin-top: 9px;
     width: fit-content;
 }
-.component11 .content .ItemPgreen:hover{
+
+.component11 .content .ItemPgreen:hover {
     cursor: pointer;
     color: #137e68;
 }
@@ -171,16 +172,19 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .component11 .content .upblock, .component11 .content .downblock{
+    .component11 .content .upblock, .component11 .content .downblock {
         grid-template-columns: auto;
         margin-top: 15px;
         overflow: visible;
     }
-    .component11 .content .upblock{
-        margin-top: 20px;
+    .component11 .content .upblock {
+        margin-top: 5%;
     }
-    .component11 .content .downblock{
-        margin-top: -20%;
+    .component11 .content .downblock {
+        margin-top: -25%;
+    }
+    .component11 .content .upblock>img {
+        height: 355px;
     }
     .component11 .content .upblock .rightside, .component11 .content .downblock .leftside {
         grid-template-columns: 1fr;
@@ -190,7 +194,7 @@
     .component11 .content .header {
         grid-column: 1/2;
     }
-    .component11 .content .upblock>img, .component11 .content .downblock>img{
+    .component11 .content .upblock>img, .component11 .content .downblock>img {
         opacity: 0%;
     }
 }

@@ -28,6 +28,7 @@
     font-size: 14px;
     color: #A1B1BC;
 }
+
 .component7 .content>p:nth-child(2) {
     margin: 12px 0 0 0;
     line-height: 1.7;
@@ -47,10 +48,12 @@
 .component7 .content .menu p {
     width: max-content;
 }
-.component7 .content .menu p:hover{
+
+.component7 .content .menu p:hover {
     color: #8b97a0;
     cursor: pointer;
 }
+
 .component7 .content .menu p:first-child {
     color: #1ABC9C;
 }
@@ -65,10 +68,12 @@
     font-size: 14px;
     align-self: center;
 }
-.component7 .content .menu button:hover{
+
+.component7 .content .menu button:hover {
     background-color: #d3e0e4;
     cursor: pointer;
 }
+
 .component7 .content .squares {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -88,38 +93,40 @@
 .component7 .content .squares .square.dark {
     background-color: #A1B1BC;
 }
-.component7 .content .squares .square .downside,
-.component7 .content .squares .square .downside .triangleblock,
-.component7 .content .squares .square .downside .triangleblock .triangle,
-.component7 .content .squares .square .downside .whitebar,
-.component7 .content .squares .square .downside .whitebar h6,
-.component7 .content .squares .square .downside .whitebar p,
-.component7 .content .squares .square .img {
-    width: 0; height: 0;
+
+.component7 .content .squares .square .downside, .component7 .content .squares .square .downside .triangleblock, .component7 .content .squares .square .downside .triangleblock .triangle, .component7 .content .squares .square .downside .whitebar, .component7 .content .squares .square .downside .whitebar h6, .component7 .content .squares .square .downside .whitebar p, .component7 .content .squares .square .img {
+    width: 0;
+    height: 0;
 }
-.component7 .content .squares .square:hover{
+
+.component7 .content .squares .square:hover {
     cursor: pointer;
 }
+
 .component7 .content .squares .square:hover .img {
     height: 130px;
     width: 100%;
     background-color: #2C3E50;
     overflow-y: hidden;
 }
-.component7 .content .squares .square:hover .img img{
+
+.component7 .content .squares .square:hover .img img {
     width: 100%;
 }
+
 .component7 .content .squares .square:hover .downside {
     height: 78px;
     width: 100%;
     overflow-y: hidden;
     margin-top: -8px;
 }
+
 .component7 .content .squares .square:hover .downside .triangleblock {
     height: 8px;
     width: 100%;
     background-color: transparent;
 }
+
 .component7 .content .squares .square:hover .downside .triangleblock .triangle {
     width: 0;
     height: 0;
@@ -130,11 +137,13 @@
     margin-left: 50%;
     transform: translateX(-50%);
 }
+
 .component7 .content .squares .square:hover .downside .whitebar {
     height: 70px;
     width: 100%;
     background-color: #FFFFFF;
 }
+
 .component7 .content .squares .square:hover .downside .whitebar h6 {
     font-size: 15px;
     font-weight: 900;
@@ -144,6 +153,7 @@
     margin-top: 18px;
     letter-spacing: 3px;
 }
+
 .component7 .content .squares .square:hover .downside .whitebar p {
     font-size: 12px;
     width: 100%;
@@ -152,27 +162,30 @@
     letter-spacing: 1px;
 }
 
-@media only screen and (max-width: 1279px){
-    .component7 .content .menu{
+@media only screen and (max-width: 1279px) {
+    .component7 .content {
+        margin: auto;
+    }
+    .component7 .content .menu {
         grid-template-columns: repeat(10, auto);
     }
-    .component7 .content{
+    .component7 .content {
         max-width: 1170.24px;
         width: 95%;
     }
 }
 
-@media only screen and (max-width: 1023px){
-    .component7 .content .menu{
+@media only screen and (max-width: 1023px) {
+    .component7 .content .menu {
         grid-template-columns: repeat(5, auto) 150px;
         grid-template-rows: 1fr 1.5fr;
         align-items: center;
     }
-    .component7 .content .menu button{
+    .component7 .content .menu button {
         grid-area: 1/6/3/7;
         margin: auto;
     }
-    .component7 .content .squares .square:hover .downside .whitebar h6{
+    .component7 .content .squares .square:hover .downside .whitebar h6 {
         margin-top: 2px;
     }
     .component7 .content .squares .square:hover .downside .whitebar p {
@@ -180,33 +193,32 @@
     }
 }
 
-@media only screen and (max-width: 767px){
-    .component7,
-    .component7 .content{
+@media only screen and (max-width: 767px) {
+    .component7, .component7 .content {
         height: auto;
     }
-    .component7 .content .menu{
+    .component7 .content .menu {
         height: 100px;
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3,1fr) 40px ;
+        grid-template-rows: repeat(3, 1fr) 40px;
         justify-items: center;
         align-items: center;
     }
-    .component7 .content .menu button{
+    .component7 .content .menu button {
         width: 122px;
         height: 26px;
         grid-area: 4/1/5/span 3;
         margin: auto;
     }
-    .component7 .content .squares{
+    .component7 .content .squares {
         min-height: 700px;
         height: auto;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-auto-flow: column;
     }
-    .component7 .content .squares .square{
+    .component7 .content .squares .square {
         width: 95%;
         max-width: 300px;
         height: 200px;

@@ -44,7 +44,7 @@
     grid-template-columns: 300px 570px 300px;
 }
 
-.component9 .content .downside i{
+.component9 .content .downside i {
     width: 50px;
     height: 50px;
     background-color: #26E2BD;
@@ -180,7 +180,6 @@
         margin: 0;
     }
     .component9 .content .downside .leftside {
-
         margin: 0;
         grid-column: 1/2;
         grid-row: 1/2;
@@ -197,16 +196,16 @@
     .component9 .content .downside .leftside .item {
         grid-template-columns: 50px 250px;
     }
-    .component9 .content .downside .leftside .item h6{
-        grid-column: 2/3;
-    }
-    .component9 .content .downside .leftside .item img{
+    .component9 .content .downside .leftside .item i {
         grid-area: 1/1/2/2;
     }
-    .component9 .content .downside .leftside .item p,
-    .component9 .content .downside .leftside .item h6,
-    .component9 .content .downside .rightside .item p,
-    .component9 .content .downside .rightside .item h6{
+    .component9 .content .downside .leftside .item h6 {
+        grid-column: 2/3;
+    }
+    .component9 .content .downside .leftside .item img {
+        grid-area: 1/1/2/2;
+    }
+    .component9 .content .downside .leftside .item p, .component9 .content .downside .leftside .item h6, .component9 .content .downside .rightside .item p, .component9 .content .downside .rightside .item h6 {
         text-align: center;
     }
 }
