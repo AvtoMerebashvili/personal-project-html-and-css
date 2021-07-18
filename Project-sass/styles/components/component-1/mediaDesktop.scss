@@ -1,0 +1,21 @@
+@media only screen and (max-width: $breakpointDesktops) {
+    .component1 {
+        height: 1000px;
+        .content {
+            width: 1052;
+            height: 600px;
+            margin-top: 325px;
+            h1 {
+                height: 160px;
+                line-height: 60px;
+                padding-top: 15px;
+                margin-top: 0px;
+            }
+            h3 {
+                &:nth-child(3) {
+                    height: 80px;
+                }
+            }
+        }
+    }
+}

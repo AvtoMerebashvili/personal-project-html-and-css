@@ -1,0 +1,12 @@
+@media only screen and (max-width: 767px){
+    .component4 .content {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin: 0 0 2% 3%;
+    }
+    .component4 .content img {
+        max-width: 470px;
+        width: 90%;
+    }
+}

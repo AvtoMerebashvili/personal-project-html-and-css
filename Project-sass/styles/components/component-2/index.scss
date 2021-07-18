@@ -1,0 +1,49 @@
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.component2 {
+    height: 90px;
+    background-color: $component2-bg;
+    @include flex;
+    .content {
+        display: grid;
+        width: 1100px;
+        grid-template-rows: 48.5px;
+        grid-template-columns: 311px 86px 78px 105px 76px 79px 86px 121px 104px auto;
+        margin-right: 82px;
+        align-items: center;
+        h1, p{
+            @include Lato;
+        }
+        .icon {
+            img {
+                float: left;
+                margin: 1px 0 0 1px;
+            }
+            h1 {
+                font-size: 35.69px;
+                color: $component2-h1;
+                height: 43px;
+                float: left;
+                margin: 2px 0 0 13px;
+                overflow-y: hidden;
+            }
+        }
+        p {   
+            font-size: 15px;
+            color: $component2-p;
+            width: fit-content;
+            &:hover {
+                cursor: pointer;
+                color: $component2-p-hover;
+            }
+        }
+    }
+}
+
+@import "mediaDesktop";
+@import "mediaLaptop";
+@import "mediaTablet";

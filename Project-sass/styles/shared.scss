@@ -1,0 +1,17 @@
+
+$breakpointDesktops: 1279px;
+$breakPointLaptops: 1023px;
+$breakpointTablets: 767px;
+.component{
+    width: 100%;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin Lato{
+    font-family: "Lato", sans-serif;
+}

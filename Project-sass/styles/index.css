@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.component {
+  width: 100%;
+}
+
+.component1 {
+  width: 100%;
+  height: 1280px;
+  background-color: #222533;
+  margin: 0;
+}
+.component1 .content {
+  width: 1052;
+  height: 341.2px;
+  margin-top: 445px;
+}
+.component1 .content h3,
+.component1 .content h1 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: normal;
+  color: #ffffff;
+  line-height: normal;
+}
+.component1 .content h3 {
+  font-size: 30px;
+  padding-top: 3px;
+}
+.component1 .content h3:first-child {
+  letter-spacing: 9px;
+  line-height: 19px;
+  height: 36px;
+  margin-top: 24px;
+}
+.component1 .content h3:first-child span {
+  color: #1abc9c;
+}
+.component1 .content h3:nth-child(3) {
+  line-height: 36px;
+  height: 45px;
+  font-weight: 100;
+  margin: -12px 0 0 -11px;
+}
+.component1 .content h1 {
+  font-family: "Lato Black", sans-serif;
+  font-size: 60px;
+  line-height: 19px;
+  height: 80px;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: -10px;
+}
+.component1 .content .divbuttons,
+.component1 .content .divrodeo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: unset;
+}
+.component1 .content .divbuttons {
+  margin-top: 35px;
+}
+.component1 .content .divbuttons .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: unset;
+  margin-right: 12px;
+}
+.component1 .content .divbuttons .buttons button {
+  height: 100%;
+  width: 200px;
+  border: 2px solid white;
+  font-family: "Lato Black", sans-serif;
+  font-size: 18px;
+  border-radius: 3px;
+  color: white;
+  background-color: inherit;
+}
+.component1 .content .divbuttons .buttons button:hover {
+  background-color: #1abc9c;
+  cursor: pointer;
+  border: none;
+}
+.component1 .content .divbuttons .buttons button:focus {
+  background-color: #1abc9c;
+}
+.component1 .content .divrodeo {
+  margin-top: 39px;
+}
+.component1 .content .divrodeo .rodeo {
+  display: flex;
+  justify-content: space-between;
+  width: 86px;
+  height: 18px;
+  margin-right: 11px;
+}
+.component1 .content .divrodeo .rodeo input {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.component1 .content .divrodeo .rodeo .round {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.component1 .content .divrodeo .rodeo .round .dot {
+  width: 8px;
+  height: 8px;
+  margin: 3px 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.component1 .content .divrodeo .rodeo .round:hover {
+  cursor: pointer;
+}
+.component1 .content .divrodeo .rodeo .round:hover .dot {
+  background-color: #1abc9c;
+}
+.component1 .content .divrodeo .rodeo #fm1:checked ~ .round #fmdot1,
+.component1 .content .divrodeo .rodeo #fm1:checked ~ .round #fmdot1,
+.component1 .content .divrodeo .rodeo #fm1:checked ~ .round #fmdot1,
+.component1 .content .divrodeo .rodeo #fm1:checked ~ .round #fmdot1 {
+  background-color: #1abc9c;
+}
+.component1 .content .divrodeo .rodeo #fm2:checked ~ .round #fmdot2,
+.component1 .content .divrodeo .rodeo #fm2:checked ~ .round #fmdot2,
+.component1 .content .divrodeo .rodeo #fm2:checked ~ .round #fmdot2,
+.component1 .content .divrodeo .rodeo #fm2:checked ~ .round #fmdot2 {
+  background-color: #1abc9c;
+}
+.component1 .content .divrodeo .rodeo #fm3:checked ~ .round #fmdot3,
+.component1 .content .divrodeo .rodeo #fm3:checked ~ .round #fmdot3,
+.component1 .content .divrodeo .rodeo #fm3:checked ~ .round #fmdot3,
+.component1 .content .divrodeo .rodeo #fm3:checked ~ .round #fmdot3 {
+  background-color: #1abc9c;
+}
+.component1 .content .divrodeo .rodeo #fm4:checked ~ .round #fmdot4,
+.component1 .content .divrodeo .rodeo #fm4:checked ~ .round #fmdot4,
+.component1 .content .divrodeo .rodeo #fm4:checked ~ .round #fmdot4,
+.component1 .content .divrodeo .rodeo #fm4:checked ~ .round #fmdot4 {
+  background-color: #1abc9c;
+}
+
+@media only screen and (max-width: 1279px) {
+  .component1 {
+    height: 1000px;
+  }
+  .component1 .content {
+    width: 1052;
+    height: 600px;
+    margin-top: 325px;
+  }
+  .component1 .content h1 {
+    height: 160px;
+    line-height: 60px;
+    padding-top: 15px;
+    margin-top: 0px;
+  }
+  .component1 .content h3:nth-child(3) {
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .component1 .content {
+    width: 1052;
+    height: 700px;
+    margin-top: 255px;
+  }
+  .component1 .content h1 {
+    height: 160px;
+    width: 100%;
+    line-height: 60px;
+    padding-top: 15px;
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .component1 .content {
+    width: 1052;
+    height: 700px;
+    margin-top: 155px;
+  }
+  .component1 .content h3:first-child {
+    letter-spacing: 9px;
+    line-height: 30px;
+    height: 65px;
+  }
+  .component1 .content h3:nth-child(3) {
+    height: 110px;
+  }
+  .component1 .content h1 {
+    height: 270px;
+    width: 100%;
+    line-height: 60px;
+  }
+  .component1 .content .divbuttons .buttons button {
+    width: 150px;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+}
+.component2 {
+  height: 90px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component2 .content {
+  display: grid;
+  width: 1100px;
+  grid-template-rows: 48.5px;
+  grid-template-columns: 311px 86px 78px 105px 76px 79px 86px 121px 104px auto;
+  margin-right: 82px;
+  align-items: center;
+}
+.component2 .content h1, .component2 .content p {
+  font-family: "Lato", sans-serif;
+}
+.component2 .content .icon img {
+  float: left;
+  margin: 1px 0 0 1px;
+}
+.component2 .content .icon h1 {
+  font-size: 35.69px;
+  color: #34495E;
+  height: 43px;
+  float: left;
+  margin: 2px 0 0 13px;
+  overflow-y: hidden;
+}
+.component2 .content p {
+  font-size: 15px;
+  color: #A1B1BC;
+  width: fit-content;
+}
+.component2 .content p:hover {
+  cursor: pointer;
+  color: #8f989e;
+}
+
+@media only screen and (max-width: 1279px) {
+  .component2 .content {
+    width: 700px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 311px 86px 88px 105px 76px 79px;
+  }
+  .component2 .content .icon {
+    grid-row: 1/span 2;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .component2 .content {
+    width: 660px;
+    grid-template-columns: 270px 86px 88px 105px 76px 79px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .component2 {
+    height: auto;
+  }
+  .component2 .content {
+    width: 100%;
+    height: 200px;
+    grid-template-rows: 2fr repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2%;
+    height: 155px;
+    justify-items: center;
+  }
+  .component2 .content .icon {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+  }
+  .component2 .content p {
+    text-align: center;
+  }
+}
+.component3 {
+  width: 100%;
+  height: 436px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #ffffff;
+  background: linear-gradient(#e4e4e4 0.1px, white 4px);
+}
+.component3 .content {
+  width: 1170px;
+  height: 240px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 300px 300px 300px 270px;
+  align-items: end;
+  margin: -7px 9px 0 0;
+}
+.component3 .content .quarter {
+  width: 270px;
+  height: 210px;
+  border: 1px solid #dbe7ef;
+  border-radius: 3px;
+  overflow: visible;
+}
+.component3 .content .quarter .border {
+  border: 1px solid #dbe7ef;
+  border-radius: 50%;
+}
+.component3 .content .quarter .round {
+  width: 60px;
+  height: 60px;
+  padding: 4px 0 0 4px;
+  margin: auto;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+}
+.component3 .content .quarter .round .smallround {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  overflow: hidden;
+}
+.component3 .content .quarter:nth-child(3) .round .smallround img {
+  margin: -2px 0 0 -3px;
+}
+.component3 .content .quarter p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.component3 .content .quarter p:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: -10px 1px 0px 0;
+}
+.component3 .content .quarter p:nth-child(3) {
+  width: 187.89px;
+  height: 125px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #a1b1bc;
+  line-height: 1.78;
+  margin: 9px 0 0 40px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .component3 {
+    height: auto;
+  }
+  .component3 .content {
+    height: 730px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 250px 240px 240px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .component3 .content .quarter:nth-child(1) {
+    grid-area: 1/1/2/span 2;
+    margin-left: 150px;
+  }
+  .component3 .content .quarter:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+  .component3 .content .quarter:nth-child(3) {
+    grid-area: 2/2/3/3;
+  }
+  .component3 .content .quarter:nth-child(4) {
+    grid-area: 3/1/4/span 2;
+    margin-left: 150px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .component3 .content {
+    height: 600px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 280px 270px;
+    justify-content: center;
+    margin: 0;
+  }
+  .component3 .content .quarter:nth-child(1) {
+    grid-area: auto;
+    margin: 0;
+  }
+  .component3 .content .quarter:nth-child(2) {
+    grid-area: auto;
+  }
+  .component3 .content .quarter:nth-child(3) {
+    grid-area: auto;
+  }
+  .component3 .content .quarter:nth-child(4) {
+    grid-area: auto;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .component3 .content {
+    height: auto;
+    grid-template-columns: 265px;
+    grid-template-rows: 240px 240px 240px 240px;
+    align-content: center;
+    margin: 10px 0 10px 0;
+  }
+}
+.component4 {
+  width: 100%;
+  height: 501px;
+  background-color: #F9FBFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.1px solid #dadada;
+}
+.component4 .content {
+  width: 1185px;
+  height: 315px;
+  display: grid;
+  grid-template-columns: 635px auto;
+  grid-template-rows: 1fr;
+}
+.component4 .content .about {
+  width: 570px;
+}
+.component4 .content .about h1,
+.component4 .content .about p,
+.component4 .content .about button {
+  font-family: "Lato", sans-serif;
+}
+.component4 .content .about h1 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #2C3E50;
+  margin: -3px 0 0 1px;
+}
+.component4 .content .about p {
+  font-size: 14px;
+  color: #A1B1BC;
+  line-height: 1.72;
+}
+.component4 .content .about p:nth-child(2) {
+  margin: 14px 0 0 2px;
+}
+.component4 .content .about p:nth-child(3) {
+  margin: 24px 0 0 2px;
+}
+.component4 .content .about button {
+  width: 173.68px;
+  height: 50px;
+  background-color: inherit;
+  font-size: 16px;
+  color: #34495E;
+  border: 1px solid #E5E5E5;
+  font-weight: 800;
+  margin: 26px 0 0 1px;
+}
+.component4 .content .about button:hover {
+  cursor: pointer;
+  background-color: #e7e5e5;
+}
+.component4 .content img {
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .component4 .content {
+    grid-template-columns: 543px auto;
+    margin-left: 3%;
+  }
+  .component4 .content img {
+    width: 470px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .component4 {
+    height: auto;
+  }
+
+  .component4 .content {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 256px 315px;
+    margin-left: 3%;
+  }
+
+  .component4 .content img {
+    grid-row: 1/2;
+  }
+
+  .component4 .content .about {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .component4 .content {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 0 0 2% 3%;
+  }
+
+  .component4 .content img {
+    max-width: 470px;
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

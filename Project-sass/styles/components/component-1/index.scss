@@ -1,0 +1,91 @@
+
+@import "rodeo";
+@import "button";
+
+
+$ids: 1, 2, 3, 4;
+
+.component1 {
+    width: 100%;
+    height: 1280px;
+    background-color: $component-1-bg;
+    margin: 0;
+    .content {
+        width: 1052;
+        height: 341.2px;
+        margin-top: 445px;
+        h3,
+        h1 {
+            @include Lato;
+            text-align: center;
+            font-weight: normal;
+            color: $component-1-font;
+            line-height: normal;
+        }
+        h3 {
+            font-size: 30px;
+            padding-top: 3px;
+            &:first-child {
+                letter-spacing: 9px;
+                line-height: 19px;
+                height: 36px;
+                margin-top: 24px;
+                span {
+                    color: $component-1-span;
+                }
+            }
+            &:nth-child(3) {
+                line-height: 36px;
+                height: 45px;
+                font-weight: 100;
+                margin: -12px 0 0 -11px;
+            }
+        }
+        h1 {
+            font-family: "Lato Black", sans-serif;
+            font-size: 60px;
+            line-height: 19px;
+            height: 80px;
+            padding-top: 15px;
+            margin-top: 15px;
+            margin-left: -10px;
+        }
+        .divbuttons,
+        .divrodeo {
+            @include flex;
+            align-items: unset;
+        }
+        .divbuttons {
+            margin-top: 35px;
+            .buttons {
+                @include flex;
+                width: 420px;
+                height: 60px;
+                justify-content: space-between;
+                align-items: unset;
+                margin-right: 12px;
+                button {
+                    @include button;
+                }
+            }
+        }
+        .divrodeo {
+            margin-top: 39px;
+            .rodeo {
+                @include rodeoinput;
+                @each $i in $ids {
+                    #fm#{$i}:checked ~ .round #fmdot#{$i},
+                    #fm#{$i}:checked ~ .round #fmdot#{$i},
+                    #fm#{$i}:checked ~ .round #fmdot#{$i},
+                    #fm#{$i}:checked ~ .round #fmdot#{$i} {
+                        background-color: $component-1-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "mediaDesktop";
+@import "mediaLaptop";
+@import "mediaTablet";

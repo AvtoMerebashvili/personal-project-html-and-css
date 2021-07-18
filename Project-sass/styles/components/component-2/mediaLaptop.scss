@@ -1,0 +1,8 @@
+@media only screen and (max-width: $breakPointLaptops) {
+    .component2 {
+        .content {
+            width: 660px;
+            grid-template-columns: 270px 86px 88px 105px 76px 79px;
+        }
+    }
+}

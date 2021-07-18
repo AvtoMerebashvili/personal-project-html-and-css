@@ -1,0 +1,74 @@
+.component3 {
+    width: 100%;
+    height: 436px;
+    @include flex;
+    align-content: center;
+    background-color: $component3-bg;
+    background: linear-gradient($component3-gradient-start 0.1px, $component3-gradient-end 4px);
+    .content {
+        width: 1170px;
+        height: 240px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 300px 300px 300px 270px;
+        align-items: end;
+        margin: -7px 9px 0 0;
+        .quarter {
+            width: 270px;
+            height: 210px;
+            border: 1px solid $component3-border;
+            border-radius: 3px;
+            overflow: visible;
+            .border {
+                border: 1px solid $component3-border;
+                border-radius: 50%;
+            }
+            .round {
+                width: 60px;
+                height: 60px;
+                padding: 4px 0 0 4px;
+                margin: auto;
+                transform: translateY(-50%);
+                background-color: $component3-bg;
+                .smallround {
+                    width: 50px;
+                    height: 50px;
+                    padding: 15px;
+                    overflow: hidden;
+                }
+            }
+            &:nth-child(3) {
+                .round {
+                    .smallround {
+                        img {
+                            margin: -2px 0 0 -3px;
+                        }
+                    }
+                }
+            }
+            p {
+                @include Lato;
+                text-align: center;
+                &:nth-child(2) {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: $component3-p-header;
+                    margin: -10px 1px 0px 0;
+                }
+                &:nth-child(3) {
+                    width: 187.89px;
+                    height: 125px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: $component3-p-text;
+                    line-height: 1.78;
+                    margin: 9px 0 0 40px;
+                }
+            }
+        }
+    }
+}
+
+@import "mediaDesktop";
+@import "mediaLaptops";
+@import "mediaTablets";

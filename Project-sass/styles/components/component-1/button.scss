@@ -1,0 +1,19 @@
+
+@mixin button {
+    height: 100%;
+    width: 200px;
+    border: 2px solid white;
+    font-family: "Lato Black", sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    color: white;
+    background-color: inherit;
+    &:hover {
+        background-color: $component-1-hover;
+        cursor: pointer;
+        border: none;
+    }
+    &:focus{
+        background-color: $component-1-hover;
+    }
+}

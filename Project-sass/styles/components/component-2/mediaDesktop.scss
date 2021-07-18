@@ -1,0 +1,12 @@
+@media only screen and (max-width: $breakpointDesktops) {
+    .component2 {
+        .content {
+            width: 700px;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: 311px 86px 88px 105px 76px 79px;
+            .icon {
+                grid-row: 1 / span 2;
+            }
+        }
+    }
+}
