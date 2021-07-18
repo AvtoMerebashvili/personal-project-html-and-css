@@ -1,0 +1,109 @@
+.component8 {
+    width: 100%;
+    height: 711px;
+    @include flex;
+    align-items: unset;
+    background-color: $component8-bg;
+    border-top: 1px solid $component8-border-top;
+    .content {
+        width: 1170px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1170px;
+        grid-template-rows: 98px 17px 311px 76px 214px;
+        align-items: center;
+        justify-items: center;
+        margin: 61px 11px 0 0;
+        h1,
+        p,
+        h6 {
+            @include Lato;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 300;
+            color: $component8-h1;
+        }
+        p {
+            font-size: 14px;
+            color: $component8-p;
+            line-height: 1.8;
+        }
+        .container {
+            padding-top: 38px;
+            width: 100%;
+            height: 150px;
+            background-color: $component8-container-bg;
+            border: 1px solid $component8-container-border;
+            p {
+                font-size: 18px;
+                margin: auto;
+            }
+        }
+        .item {
+            margin-left: 3px;
+            height: 172.63;
+            .circle {
+                width: 112px;
+                height: 112px;
+                border: 6px solid white;
+                border-radius: 50%;
+                background-color: #a1b1bc;
+                margin: auto;
+            }
+            h6 {
+                font-size: 18px;
+                font-weight: bold;
+                color: #2c3e50;
+                margin-top: 17px;
+            }
+            p {
+                font-size: 14px;
+                color: #a1b1bc;
+            }
+        }
+        form {
+            display: flex;
+            width: 92px;
+            justify-content: space-between;
+            margin-left: 4px;
+            input {
+                width: 0px;
+                height: 0px;
+            }
+            label {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                border: 1px solid $component8-label-border;
+                @include flex;
+                .green {
+                    width: 0;
+                    height: 0;
+                }
+                &:hover {
+                    cursor: pointer;
+                    .green {
+                        width: 6px;
+                        height: 6px;
+                        background-color: $component8-input-hov-chckd;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            @for $i from 1 to 5 {
+                #i#{$i}:checked ~ label #inp#{$i} {
+                    width: 6px;
+                    height: 6px;
+                    background-color: $component8-input-hov-chckd;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+@import "mediaDesktop";
+@import "mediaLaptop";
+@import "mediaTablets";
