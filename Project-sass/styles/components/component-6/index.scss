@@ -33,13 +33,13 @@ $pmargins: (
         }
         h1 {
             font-size: 36px;
-            color: #2c3e50;
+            color: $component6-h1;
             font-weight: 300;
             margin: 90px 10px 0 0;
         }
         > p {
             font-size: 14px;
-            color: #a1b1bc;
+            color: $component6-p;
             margin: 13px 13px 0 0;
             line-height: 1.7;
         }
@@ -53,24 +53,22 @@ $pmargins: (
             width: 100%;
             min-width: 1347px;
             .category {
-                border: 1px solid #ecf0f1;
+                border: 1px solid $component6-border;
                 .img {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex;
                     margin: -16px 0 0 9px;
                 }
                 h4 {
                     font-size: 18px;
                     font-weight: bold;
-                    color: #2c3e50;
+                    color: $component6-h4;
                     margin: 30px 20px 0 0;
                 }
                 p {
                     height: auto;
                     letter-spacing: -0.9px;
                     line-height: 1.5;
-                    color: #a1b1bc;
+                    color: $component6-p;
                 }
                 @for $i from 1 through 4 {
                     &:nth-child(#{$i}) {
