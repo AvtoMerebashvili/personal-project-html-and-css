@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: $breakpointDesktops) {
     .component4 {
         .content {
             grid-template-columns: 543px auto;

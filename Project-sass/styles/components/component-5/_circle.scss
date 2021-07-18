@@ -1,0 +1,38 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #1abc9c;
+    border-radius: 50%;
+    margin: 3px 0 0 26px;
+    .whitecircle {
+        width: 188.06px;
+        height: 188.06px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        .graycircle {
+            width: 104.48px;
+            height: 104.48px;
+            background-color: #ecf0f1;
+            border-radius: 50%;
+            p {
+                color: #4e4e4e;
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+    }
+    &:hover {
+        background-color: #21c2f8;
+        cursor: pointer;
+        .whitecircle {
+            .graycircle {
+                background-color: #2c3e50;
+                cursor: pointer;
+                p {
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
