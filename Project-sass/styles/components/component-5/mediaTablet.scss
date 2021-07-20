@@ -1,4 +1,4 @@
-@media only screen and (max-width: $breakpointTablets) {
+@media only screen and (max-width: media("tablet")) {
     .component5 {
         .content {
             margin-top: 20px;

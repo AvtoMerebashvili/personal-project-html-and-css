@@ -1,5 +1,4 @@
-@import "desktopGrid";
-@media only screen and (max-width: $breakpointDesktops) {
+@media only screen and (max-width: media("desktop")) {
     .component5 {
         height: auto;
         .content {
