@@ -1,0 +1,35 @@
+@mixin butt($param) {
+    @if $param == "little" {
+        button {
+            width: 120px;
+            height: 32px;
+            border: none;
+            background-color: #1abc9c;
+            color: #ffffff;
+            box-shadow: 0px 2px 0px 0px #16a085;
+            font-size: 15px;
+            color: #ffffff;
+            &:hover {
+                cursor: pointer;
+                background-color: #3a3e4a;
+                box-shadow: none;
+            }
+        }
+    } @else if $param=="large"{
+        button {
+            width: 176px;
+            height: 50px;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            background-color: #1ABC9C;
+            color: #FFFFFF;
+            box-shadow: 0px 2px 0px 0px #16a085;
+            border-radius: 3px;
+            &:hover {
+                cursor: pointer;
+                background-color: #16a085;
+            }
+        }
+    }
+}

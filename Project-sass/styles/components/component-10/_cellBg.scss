@@ -1,0 +1,7 @@
+@mixin bg($param){
+    @if ($param=="Light"){
+        background-color: $component10-cellLight;
+    }@else if($param=="Dark"){
+        background-color: $component10-cellDark;
+    }
+}
