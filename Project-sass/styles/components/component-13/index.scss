@@ -16,22 +16,21 @@
         grid-template-columns: 600px 562px;
         grid-template-rows: 1fr;
         margin: 90px 11px 0 0;
-        h1 {
+        h1, h3, p{
             font-family: "Lato", sans-serif;
-            color: $component13-h1-3-p;
             text-align: left;
+        }
+        h1{
+            color: $component13-h1-3-p;
             font-size: 36px;
             font-weight: 300;
         }
         h3 {
-            font-family: "Lato", sans-serif;
             color: $component13-h1-3-p;
-            text-align: left;
         }
         p {
-            font-family: "Lato", sans-serif;
+           
             color: $component13-h1-3-p;
-            text-align: left;
             font-size: 14px;
             line-height: 1.75;
         }

@@ -1,0 +1,16 @@
+.component14 {
+	width: 100%;
+	height: 101px;
+	background-color: $component14-bg;
+	@include flex;
+	border-top: 1px solid rgb(39, 39, 39);
+	border-bottom: 1px solid rgb(39, 39, 39);
+	.content {
+		width: 1098px;
+		display: grid;
+		grid-template-columns: 92px 98px 101px 94px 100px 95px 96px 99px 102px 93px 96px auto;
+	}
+}
+
+@import "mediaDesktop";
+@import "mediaTablet";

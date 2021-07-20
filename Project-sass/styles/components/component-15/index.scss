@@ -1,0 +1,43 @@
+@import "sidebars";
+.component15 {
+	height: 609px;
+	width: 100%;
+	@include flex;
+    align-items: unset;
+	background-color: $component15-bg;
+	.content {
+		width: 1175px;
+		height: auto;
+		display: grid;
+		grid-template-columns: 400px 395px auto;
+		grid-template-rows: 1fr;
+		margin: 99px 7px 0 0;
+		p,h1,h3 {
+			font-family: "Lato", sans-serif;
+			color: $component15-p-h1-h3;
+			text-align: left;
+		}
+	
+		.header {
+			.greenline {
+				width: 5px;
+				height: 18px;
+				background-color: #1ABC9C;
+				float: left;
+			}
+			h3 {
+				font-size: 24px;
+				font-weight: 300;
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+		@include rightbar;
+		@include leftbar;
+		@include centerbar;
+	}
+}
+
+@import "mediaDesktop";
+@import "mediaTablet";

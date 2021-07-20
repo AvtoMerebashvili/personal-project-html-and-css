@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1279px) {
+	.component15 {
+		height: auto;
+		.content {
+			max-width: 1000px;
+			width: auto;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1.1fr 1fr;
+			justify-self: center;
+			margin-bottom: 20px;
+			.leftbar {
+				.name {
+					h1 {
+						float: left;
+					}
+					img {
+						width: 18px;
+						height: 20px;
+						margin: 0;
+					}
+				}
+				justify-items: center;
+			}
+			.rightbar {
+				grid-area: 2/1/3/3;
+				justify-items: center;
+			}
+			.centerbar {
+				justify-items: center;
+			}
+		}
+	}
+}

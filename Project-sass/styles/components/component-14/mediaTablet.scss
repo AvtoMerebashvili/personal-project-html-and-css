@@ -1,0 +1,9 @@
+@media only screen and (max-width: $breakpointTablets) {
+	.component14 {
+		.content {
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows: repeat(2, minmax(40px, 1fr));
+			align-items: center;
+		}
+	}
+}

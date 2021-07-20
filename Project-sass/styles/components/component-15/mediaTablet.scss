@@ -1,0 +1,24 @@
+@media only screen and (max-width: 767px) {
+	.component15 {
+		.content {
+			max-width: 750px;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1.1fr 1.1fr 1fr;
+			.rightbar {
+				grid-area: auto;
+				.squares {
+					grid-template-columns: repeat(4, 90px);
+					grid-template-rows: repeat(3, 90px);
+					.cell {
+						width: 83px;
+						height: 83px;
+						&:hover {
+							width: 86px;
+							height: 86px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
