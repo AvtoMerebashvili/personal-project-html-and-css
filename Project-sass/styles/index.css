@@ -1896,5 +1896,136 @@
     grid-column: 1/2;
   }
 }
+.component12 {
+  width: 100%;
+  height: 790px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component12 .content {
+  width: 1174px;
+  height: auto;
+  margin: 52px 6px 0 0;
+}
+.component12 .content h1 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  color: #2C3E50;
+  margin: 30px 0 0 10px;
+}
+.component12 .content p, .component12 .content h3 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.component12 .content > p {
+  font-size: 14px;
+  color: #A1B1BC;
+  margin: 8px 0 0 6px;
+  line-height: 1.7;
+  word-spacing: -0.19px;
+}
+.component12 .content .categories {
+  display: grid;
+  grid-template-columns: 400px 400px 385px;
+  grid-template-rows: 249px 295px;
+  margin-top: 49px;
+}
+.component12 .content .categories .category {
+  display: grid;
+  grid-template-columns: 189px 25px 154px;
+  grid-template-rows: 115px 30px 30px 24px;
+}
+.component12 .content .categories .category:nth-child(5) {
+  grid-template-rows: 89px 30px 30px 24px;
+}
+.component12 .content .categories .category:nth-child(6) {
+  grid-template-rows: 89px 30px 30px 24px;
+}
+.component12 .content .categories .category .quarter {
+  width: 170px;
+  height: 200px;
+  background-color: #CCCCCC;
+  grid-row: 1/span 4;
+}
+.component12 .content .categories .category .quarter:hover {
+  background-color: #2C3E50;
+  cursor: pointer;
+}
+.component12 .content .categories .category h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2C3E50;
+  text-align: left;
+  grid-column: 2/span 2;
+  line-height: 1.5;
+  margin-top: -6px;
+  overflow-y: clip;
+}
+.component12 .content .categories .category p {
+  font-size: 14px;
+  text-align: left;
+  color: #A1B1BC;
+}
+.component12 .content .categories .category i {
+  color: #1ABC9C;
+}
+
+@media only screen and (max-width: 1279px) {
+  .component12 .content {
+    width: 90%;
+    max-width: 1170px;
+  }
+  .component12 .content .categories {
+    grid-template-columns: 33% 33% 33%;
+  }
+  .component12 .content .categories .category {
+    display: grid;
+    grid-template-columns: minmax(50%, 176px) 6% 37%;
+    grid-template-rows: 136px 20px 20px 24px;
+  }
+  .component12 .content .categories .category:nth-child(5) {
+    grid-template-rows: 128px 20px 20px 24px;
+  }
+  .component12 .content .categories .category:nth-child(6) {
+    grid-template-rows: 128px 20px 20px 24px;
+  }
+  .component12 .content .categories .category h3 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .component12 {
+    height: auto;
+  }
+  .component12 .content {
+    margin-bottom: 3%;
+  }
+  .component12 .content .categories {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 249px);
+    justify-items: center;
+  }
+  .component12 .content .categories .category {
+    display: grid;
+    grid-template-columns: 189px 25px 122px;
+    grid-template-rows: 115px 30px 30px 24px;
+  }
+  .component12 .content .categories .category:nth-child(5) {
+    grid-template-rows: 89px 30px 30px 24px;
+  }
+  .component12 .content .categories .category:nth-child(6) {
+    grid-template-rows: 89px 30px 30px 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .component12 .content .categories {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 249px);
+    justify-items: center;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

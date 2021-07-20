@@ -1,0 +1,24 @@
+@media only screen and (max-width: $breakPointLaptops) {
+	.component12 {
+		height: auto;
+		.content {
+			margin-bottom: 3%;
+			.categories {
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: repeat(3, 249px);
+				justify-items: center;
+				.category {
+					display: grid;
+					grid-template-columns: 189px 25px 122px;
+					grid-template-rows: 115px 30px 30px 24px;
+					&:nth-child(5) {
+						grid-template-rows: 89px 30px 30px 24px;
+					}
+					&:nth-child(6) {
+						grid-template-rows: 89px 30px 30px 24px;
+					}
+				}
+			}
+		}
+	}
+}

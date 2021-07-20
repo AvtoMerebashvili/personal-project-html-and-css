@@ -1,0 +1,25 @@
+@media only screen and (max-width: $breakpointDesktops) {
+	.component12 {
+		.content {
+			width: 90%;
+			max-width: 1170px;
+			.categories {
+				grid-template-columns: 33% 33% 33%;
+				.category {
+					display: grid;
+					grid-template-columns: minmax(50%,176px) 6% 37%;
+					grid-template-rows: 136px 20px 20px 24px;
+					&:nth-child(5) {
+						grid-template-rows: 128px 20px 20px 24px;
+					}
+					&:nth-child(6) {
+						grid-template-rows: 128px 20px 20px 24px;
+					}
+					h3 {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+}

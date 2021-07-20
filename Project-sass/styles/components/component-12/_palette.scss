@@ -1,0 +1,11 @@
+@mixin color($param){
+    @if $param=="header"{
+        color:$component12-h1;
+    }@else if $param=="p"{
+        color:$component12-p;
+    }@else if $param=="quarter"{
+       background-color: $component12-quarter;
+    }@else if $param=="green"{
+        color: $component12-green;
+    }
+}
