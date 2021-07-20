@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1279px) {
+	.component11 {
+		.content {
+			width: 90%;
+			.upblock {
+				>img {
+					max-width: 542px;
+					width: 95%;
+					height: auto;
+					margin: 0;
+					align-self: center;
+				}
+				grid-template-columns: auto 620px;
+			}
+			.downblock {
+				>img {
+					max-width: 550px;
+					width: 95%;
+					height: auto;
+					align-self: center;
+				}
+				grid-template-columns: 617px auto;
+			}
+		}
+	}
+}

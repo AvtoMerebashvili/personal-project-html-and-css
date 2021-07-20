@@ -1693,5 +1693,208 @@
     font-size: 14px;
   }
 }
+.component11 {
+  height: 1264px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: unset;
+  background-color: #F9FBFB;
+  border-top: 1px solid #ebebeb;
+}
+.component11 .content {
+  width: 1175px;
+  height: auto;
+  margin: 101px 4px 0 0;
+}
+.component11 .content p,
+.component11 .content h1 {
+  font-family: "Lato", sans-serif;
+}
+.component11 .content .upblock {
+  height: 542px;
+  display: grid;
+  grid-template-columns: 600px 620px;
+  grid-template-rows: 1fr;
+}
+.component11 .content .upblock .rightside {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 86px 192px 1fr;
+  height: 488px;
+  align-self: end;
+}
+.component11 .content .item {
+  display: grid;
+  grid-template-columns: 43px auto;
+  grid-template-rows: 38px 75px 36px;
+}
+.component11 .content .item p {
+  grid-column: 1/span 2;
+  grid-column: 1/span 2;
+  line-height: 1.76;
+  margin-top: 10px;
+  overflow-y: hidden;
+}
+.component11 .content .item .ItemPgreen {
+  font-size: 15px;
+  color: #1ABC9C;
+  font-weight: bold;
+  margin-left: -1px;
+  margin-top: 9px;
+  width: fit-content;
+}
+.component11 .content .ItemH1 {
+  font-size: 18px;
+  color: #2C3E50;
+  align-self: center;
+}
+.component11 .content .ItemP {
+  font-size: 14px;
+  color: #a1b1bc;
+}
+.component11 .content .ItemPgreen:hover {
+  cursor: pointer;
+  color: #137e68;
+}
+.component11 .content .header {
+  grid-column: 1/span 2;
+  font-size: 36px;
+  color: #2C3E50;
+  font-weight: 300;
+  margin-left: -2px;
+}
+.component11 .content .downblock {
+  height: 542px;
+  display: grid;
+  grid-template-columns: 617px 620px;
+  grid-template-rows: 1fr;
+}
+.component11 .content .downblock .leftside {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 86px 192px 1fr;
+  height: 457px;
+  align-self: end;
+}
+.component11 .content .downblock > img {
+  margin-top: 93px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .component11 .content {
+    width: 90%;
+  }
+  .component11 .content .upblock {
+    grid-template-columns: auto 620px;
+  }
+  .component11 .content .upblock > img {
+    max-width: 542px;
+    width: 95%;
+    height: auto;
+    margin: 0;
+    align-self: center;
+  }
+  .component11 .content .downblock {
+    grid-template-columns: 617px auto;
+  }
+  .component11 .content .downblock > img {
+    max-width: 550px;
+    width: 95%;
+    height: auto;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .component11 {
+    height: auto;
+    margin-top: 0;
+  }
+  .component11 .content {
+    height: auto;
+    margin-top: 0;
+    margin-top: 0;
+    width: 95%;
+  }
+  .component11 .content .downblock {
+    grid-template-columns: 620px;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    height: auto;
+    margin: 0;
+    margin-top: -50px;
+  }
+  .component11 .content .downblock > img {
+    width: 100%;
+    grid-row: 1/2;
+  }
+  .component11 .content .downblock .leftside {
+    justify-content: center;
+    z-index: 1;
+    margin-top: -293px;
+  }
+  .component11 .content .upblock {
+    grid-template-columns: 620px;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    height: auto;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .component11 .content .upblock > img {
+    width: 100%;
+    grid-row: 1/2;
+  }
+  .component11 .content .upblock .rightside {
+    justify-content: center;
+    margin-top: -368px;
+  }
+  .component11 .content .ItemP {
+    color: #5f5f5f;
+    text-align: center;
+  }
+  .component11 .content .item {
+    justify-content: center;
+    justify-items: center;
+  }
+  .component11 .content .header {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .component11 .content .upblock {
+    grid-template-columns: auto;
+    margin-top: 15px;
+    overflow: visible;
+    margin-top: 5%;
+  }
+  .component11 .content .upblock > img {
+    height: 355px;
+    opacity: 0%;
+  }
+  .component11 .content .upblock .rightside {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    height: auto;
+  }
+  .component11 .content .downblock {
+    grid-template-columns: auto;
+    margin-top: 15px;
+    overflow: visible;
+    margin-top: -25%;
+  }
+  .component11 .content .downblock .leftside {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    height: auto;
+  }
+  .component11 .content .downblock > img {
+    opacity: 0%;
+  }
+  .component11 .content .header {
+    grid-column: 1/2;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

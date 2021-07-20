@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1023px) {
+	.component11 {
+		height: auto;
+		margin-top: 0;
+		.content {
+			height: auto;
+			margin-top: 0;
+			margin-top: 0;
+			width: 95%;
+			.downblock {
+				grid-template-columns: 620px;
+				grid-template-rows: auto 1fr;
+				justify-content: center;
+				height: auto;
+				margin: 0;
+				margin-top: -50px;
+				>img {
+					width: 100%;
+					grid-row: 1/2;
+				}
+				.leftside {
+					justify-content: center;
+					z-index: 1;
+					margin-top: -293px;
+				}
+			}
+			.upblock {
+				grid-template-columns: 620px;
+				grid-template-rows: auto 1fr;
+				justify-content: center;
+				height: auto;
+				margin: 0;
+				margin-top: 20px;
+				>img {
+					width: 100%;
+					grid-row: 1/2;
+				}
+				.rightside {
+					justify-content: center;
+					margin-top: -368px;
+				}
+			}
+			.ItemP {
+				color: rgb(95, 95, 95);
+				text-align: center;
+			}
+			.item {
+				justify-content: center;
+				justify-items: center;
+			}
+			.header {
+				text-align: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+.component11 {
+    height: 1264px;
+    width: 100%;
+    @include flex;
+    align-items: unset;
+    background-color: $component11-bg;
+    border-top: 1px solid #ebebeb;
+    .content {
+        width: 1175px;
+        height: auto;
+        margin: 101px 4px 0 0;
+        p,
+        h1 {
+            @include Lato;
+        }
+        .upblock {
+            height: 542px;
+            display: grid;
+            grid-template-columns: 600px 620px;
+            grid-template-rows: 1fr;
+            .rightside {
+                display: grid;
+                grid-template-columns: 300px 300px;
+                grid-template-rows: 86px 192px 1fr;
+                height: 488px;
+                align-self: end;
+            }
+        }
+        .item {
+            display: grid;
+            grid-template-columns: 43px auto;
+            grid-template-rows: 38px 75px 36px;
+            p {
+                grid-column: 1 / span 2;
+                grid-column: 1 / span 2;
+                line-height: 1.76;
+                margin-top: 10px;
+                overflow-y: hidden;
+            }
+            .ItemPgreen {
+                font-size: 15px;
+                color: $component11-green;
+                font-weight: bold;
+                margin-left: -1px;
+                margin-top: 9px;
+                width: fit-content;
+            }
+        }
+        .ItemH1 {
+            font-size: 18px;
+            color: $component11-header;
+            align-self: center;
+        }
+        .ItemP {
+            font-size: 14px;
+            color: #a1b1bc;
+        }
+        .ItemPgreen {
+            &:hover {
+                cursor: pointer;
+                color: #137e68;
+            }
+        }
+        .header {
+            grid-column: 1 / span 2;
+            font-size: 36px;
+            color: $component11-header;
+            font-weight: 300;
+            margin-left: -2px;
+        }
+        .downblock {
+            height: 542px;
+            display: grid;
+            grid-template-columns: 617px 620px;
+            grid-template-rows: 1fr;
+            .leftside {
+                display: grid;
+                grid-template-columns: 300px 300px;
+                grid-template-rows: 86px 192px 1fr;
+                height: 457px;
+                align-self: end;
+            }
+            > img {
+                margin-top: 93px;
+            }
+        }
+    }
+}
+
+@import "mediaDesktop";
+@import "mediaLaptop";
+@import "mediaTablet";
