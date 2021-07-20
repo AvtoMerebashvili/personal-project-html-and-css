@@ -2090,6 +2090,7 @@
   border-radius: 3px;
   margin-bottom: 20px;
   padding-left: 20px;
+  align-items: unset;
 }
 .component13 .content .leftbar form input::placeholder {
   color: white;
