@@ -1,0 +1,30 @@
+@media only screen and (max-width: $breakpointDesktops) {
+    .component13 {
+        .content {
+            width: 95%;
+            grid-template-columns: 1fr 1fr;
+            .leftbar {
+                grid-template-rows: 80px auto 55px auto;
+                .icons {
+                    grid-template-columns: repeat(11, 1fr);
+                }
+                form {
+                    input {
+                        width: 95%;
+                    }
+                    textarea {
+                        width: 95%;
+                    }
+                }
+            }
+            .rightbar {
+                grid-template-rows: 85px repeat(2, 177px) 158px auto;
+                .item {
+                    p {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

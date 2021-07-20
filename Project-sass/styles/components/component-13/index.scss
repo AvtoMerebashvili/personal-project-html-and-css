@@ -1,0 +1,115 @@
+@import "input";
+@import "textarea";
+@import "button";
+@import "./dots/dots";
+
+.component13 {
+    width: 100%;
+    height: 774px;
+    display: flex;
+    justify-content: center;
+    background-color: $component13-bg;
+    .content {
+        width: 1170px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 600px 562px;
+        grid-template-rows: 1fr;
+        margin: 90px 11px 0 0;
+        h1 {
+            font-family: "Lato", sans-serif;
+            color: $component13-h1-3-p;
+            text-align: left;
+            font-size: 36px;
+            font-weight: 300;
+        }
+        h3 {
+            font-family: "Lato", sans-serif;
+            color: $component13-h1-3-p;
+            text-align: left;
+        }
+        p {
+            font-family: "Lato", sans-serif;
+            color: $component13-h1-3-p;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.75;
+        }
+        .leftbar {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 64px 55px auto;
+            h1 {
+                margin-left: -3px;
+            }
+            .icons {
+                display: grid;
+                grid-template-columns: 43px 49px 45px 51px 46px 49px 47px 50px 48px 50px 20px;
+                grid-template-rows: 1fr;
+                i {
+                    color: $component13-h1-3-p;
+                    font-size: 27px;
+                    &:hover {
+                        color: $component13-i-hover;
+                        cursor: pointer;
+                    }
+                }
+            }
+            form {
+                input {
+                  @include input;
+                }
+                textarea {
+                  @include textarea;
+                }
+                .bttn {
+                    @include button;
+                }
+            }
+        }
+        .rightbar {
+            h1 {
+                margin-left: -1px;
+            }
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 86px repeat(2, 165px) 158px auto;
+            .item {
+                display: grid;
+                grid-template-columns: 145px auto;
+                grid-template-rows: 22px 29px auto;
+                .square {
+                    width: 125px;
+                    height: 125px;
+                    background-color: #ffffff;
+                    grid-row: 1/ 4;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &:hover {
+                        .hover {
+                            width: 115px;
+                            height: 115px;
+                            background-color: #2f313c;
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                h3 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-top: -3px;
+                }
+            }
+            .dots {
+               @include dots;
+            }
+        }
+    }
+}
+
+@import "mediaDesktop";
+@import "mediaTablet";

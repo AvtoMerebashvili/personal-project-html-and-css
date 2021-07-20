@@ -1,0 +1,9 @@
+@mixin doter {
+    @for $i from 1 to 4 {
+        #r#{$i} {
+            &:checked ~ #green#{$i} {
+                background-color: $component13-green;
+            }
+        }
+    }
+}

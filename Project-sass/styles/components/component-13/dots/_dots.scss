@@ -1,0 +1,22 @@
+@import "dotsCheck";
+@mixin dots {
+    width: 45px;
+    display: flex;
+    margin-left: -3px;
+    justify-content: space-between;
+    input {
+        width: 0;
+        height: 0;
+    }
+    label {
+        width: 10px;
+        height: 10px;
+        border-radius: none;
+        background-color: #ffffff;
+        &:hover {
+            background-color: #1beac1;
+            cursor: pointer;
+        }
+    }
+    @include doter;
+}
