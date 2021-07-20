@@ -1,0 +1,57 @@
+.component16 {
+	width: 100%;
+	height: 82px;
+    @include flex;
+    align-items: unset;
+	background-color: $component16-bg;
+	border-top: 1px solid rgb(39, 39, 39);
+	.content {
+		width: 1183px;
+		height: 76px;
+		display: grid;
+		grid-template-columns: 38px 701px 104px 123px 70px 77px auto;
+		grid-template-rows: 100%;
+		align-items: center;
+		img {
+			margin-top: 4px;
+		}
+		.cell {
+			height: 100%;
+			width: fit-content;
+		}
+		h6 {
+			@include Lato;
+			color: $component16-h6-p;
+			font-weight: normal;
+			font-size: 15px;
+			span {
+				color: $component16-green;
+			}
+		}
+		p {
+			@include Lato;
+			color: $component16-h6-p;
+			font-weight: normal;
+			font-size: 14px;
+			margin-top: 30px;
+			&:hover {
+				color: $component16-green;
+				cursor: pointer;
+			}
+			&:hover~.greenline {
+				background-color: $component16-green;
+			}
+		}
+		.greenline {
+			background-color: inherit;
+			height: 2px;
+			align-self: flex-start;
+			margin-top: -47px;
+		}
+	}
+}
+
+
+@import "mediaDesktop";
+@import "mediaLaptop";
+@import "mediaTablet";

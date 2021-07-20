@@ -1,0 +1,12 @@
+@media only screen and (max-width: $breakpointDesktops) {
+	.component16 {
+		height: auto;
+		.content {
+			height: auto;
+			min-height: 76px;
+			width: 95%;
+			max-width: 1183px;
+			grid-template-columns: 38px 59% repeat(5, auto);
+		}
+	}
+}
