@@ -1,0 +1,11 @@
+@mixin bg($background) {
+    @if $background == "dark" {
+        background-color: $component9-bg;
+    } @else if $background == "light" {
+        $background-color: $component9-phone;
+    } @else if $background == "p" {
+        color: $component9-p;
+    } @else if $background == "span" {
+        color: #26e2bd;
+    }
+}

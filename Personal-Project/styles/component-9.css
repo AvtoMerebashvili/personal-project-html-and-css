@@ -205,7 +205,10 @@
     .component9 .content .downside .leftside .item img {
         grid-area: 1/1/2/2;
     }
-    .component9 .content .downside .leftside .item p, .component9 .content .downside .leftside .item h6, .component9 .content .downside .rightside .item p, .component9 .content .downside .rightside .item h6 {
+    .component9 .content .downside .leftside .item p, 
+    .component9 .content .downside .leftside .item h6, 
+    .component9 .content .downside .rightside .item p, 
+    .component9 .content .downside .rightside .item h6 {
         text-align: center;
     }
 }

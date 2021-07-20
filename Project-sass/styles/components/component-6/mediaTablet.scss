@@ -1,9 +1,17 @@
-@media only screen and (max-width: 767px){
-    .component6 .content .categories{
-        grid-template-columns: 1fr;
-        grid-auto-rows: 1fr;
-    }
-    .component6 .content .categories .category:nth-child(2) p{
-        margin-bottom: 30px;
+@media only screen and (max-width: 767px) {
+    .component6 {
+        .content {
+            .categories {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 1fr;
+            }
+            .category{
+                &:nth-child(2){
+                    p{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
     }
 }

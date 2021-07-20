@@ -1,5 +1,9 @@
 @media only screen and (max-width: $breakPointLaptops) {
-    .component8 .content .container p {
-        margin-bottom: 15px;
+    .component8 {
+        .content {
+            p {
+                margin-bottom: 15px;
+            }
+        }
     }
 }

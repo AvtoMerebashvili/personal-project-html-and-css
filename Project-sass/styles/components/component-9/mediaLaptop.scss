@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1023px) {
+    .component9 {
+        height: auto;
+        .content {
+            .downside {
+                grid-template-columns: 300px 400px 300px;
+                .center,
+                .phone,
+                .leftside,
+                .leftside .item {
+                    overflow: unset;
+                }
+                .leftside {
+                    margin-left: 161px;
+                    z-index: 0;
+                }
+                .rightside {
+                    margin-left: -161px;
+                }
+            }
+        }
+    }
+}

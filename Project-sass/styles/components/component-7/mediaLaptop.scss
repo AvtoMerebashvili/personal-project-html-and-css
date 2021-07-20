@@ -1,17 +1,29 @@
-@media only screen and (max-width: 1023px) {
-    .component7 .content .menu {
-        grid-template-columns: repeat(5, auto) 150px;
-        grid-template-rows: 1fr 1.5fr;
-        align-items: center;
-    }
-    .component7 .content .menu button {
-        grid-area: 1/6/3/7;
-        margin: auto;
-    }
-    .component7 .content .squares .square:hover .downside .whitebar h6 {
-        margin-top: 2px;
-    }
-    .component7 .content .squares .square:hover .downside .whitebar p {
-        margin-top: 2px;
+@media only screen and (max-width: 1279px) {
+    .component7 {
+        .content {
+            .menu {
+                grid-template-columns: repeat(5, auto) 150px;
+                grid-template-rows: 1fr 1.5fr;
+                align-items: center;
+                button {
+                    grid-area: 1/6/3/7;
+                    margin: auto;
+                }
+            }
+            .squares {
+                .square {
+                    &:hover {
+                        .downside {
+                            .whitebar {
+                                h6,
+                                p {
+                                    margin-top: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

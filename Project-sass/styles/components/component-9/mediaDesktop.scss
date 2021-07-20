@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1279px) {
+    .component9 {
+        .content {
+            .downside {
+                grid-template-columns: 300px auto 300px;
+                .center {
+                    width: 396px;
+                    margin: auto;
+                    .phone {
+                        max-width: 446px;
+                        width: 92%;
+                    }
+                }
+            }
+        }
+    }
+}

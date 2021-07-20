@@ -1,14 +1,18 @@
 @media only screen and (max-width: $breakpointTablets) {
-    .component8 .content>p {
-        margin-top: 90px;
-    }
-    .component8 .content .container {
-        margin-top: 100px;
-    }
-    .component8 .content .item {
-        margin-top: 155px
-    }
-    .component8 .content form {
-        margin-top: 95px;
+    .component8 {
+        .content {
+            > p {
+                margin-top: 90px;
+            }
+            .container {
+                margin-top: 100px;
+            }
+            .item {
+                margin-top: 155px;
+            }
+            form {
+                margin-top: 95px;
+            }
+        }
     }
 }

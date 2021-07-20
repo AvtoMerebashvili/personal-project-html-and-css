@@ -486,18 +486,15 @@
   .component4 {
     height: auto;
   }
-
   .component4 .content {
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 256px 315px;
     margin-left: 3%;
   }
-
   .component4 .content img {
     grid-row: 1/2;
   }
-
   .component4 .content .about {
     width: 100%;
   }
@@ -509,7 +506,6 @@
     grid-template-rows: auto auto;
     margin: 0 0 2% 3%;
   }
-
   .component4 .content img {
     max-width: 470px;
     width: 90%;
@@ -608,58 +604,45 @@
   .component5 {
     height: auto;
   }
-
   .component5 .content {
     height: auto;
     width: 100%;
   }
-
   .component5 .content .infogram {
     grid-template-columns: 45% 45%;
     grid-template-rows: repeat(4, 1fr);
     justify-content: center;
   }
-
   .component5 .content .infogram .circle {
     margin: auto;
   }
-
   .component5 .content .infogram .circle:nth-child(1) {
     grid-area: 1/1/2/2;
   }
-
   .component5 .content .infogram .circle:nth-child(2) {
     grid-area: 1/2/2/3;
   }
-
   .component5 .content .infogram .circle:nth-child(3) {
     grid-area: 3/1/4/2;
   }
-
   .component5 .content .infogram .circle:nth-child(4) {
     grid-area: 3/2/4/3;
   }
-
   .component5 .content .infogram .category h4 {
     margin: revert;
   }
-
   .component5 .content .infogram .category p {
     margin: auto;
   }
-
   .component5 .content .infogram .category:nth-child(5) {
     grid-area: 2/1/3/2;
   }
-
   .component5 .content .infogram .category:nth-child(6) {
     grid-area: 2/2/3/3;
   }
-
   .component5 .content .infogram .category:nth-child(7) {
     grid-area: 4/1/5/2;
   }
-
   .component5 .content .infogram .category:nth-child(8) {
     grid-area: 4/2/5/3;
   }
@@ -668,42 +651,33 @@
   .component5 .content {
     margin-top: 20px;
   }
-
   .component5 .content .infogram {
     grid-template-columns: 300px;
     grid-auto-rows: 1fr;
     justify-content: center;
   }
-
-  .component5 .content .infogram .circle:nth-child(1) {
+  .component5 .content .circle:nth-child(1) {
     grid-area: 1/auto/2;
   }
-
-  .component5 .content .infogram .circle:nth-child(2) {
+  .component5 .content .circle:nth-child(2) {
     grid-area: 3/auto/4;
   }
-
-  .component5 .content .infogram .circle:nth-child(3) {
+  .component5 .content .circle:nth-child(3) {
     grid-area: 5/auto/6;
   }
-
-  .component5 .content .infogram .circle:nth-child(4) {
+  .component5 .content .circle:nth-child(4) {
     grid-area: 7/auto/8;
   }
-
-  .component5 .content .infogram .category:nth-child(5) {
+  .component5 .content .category:nth-child(5) {
     grid-area: 2/auto/3;
   }
-
-  .component5 .content .infogram .category:nth-child(6) {
+  .component5 .content .category:nth-child(6) {
     grid-area: 4/auto/5;
   }
-
-  .component5 .content .infogram .category:nth-child(7) {
+  .component5 .content .category:nth-child(7) {
     grid-area: 6/auto/7;
   }
-
-  .component5 .content .infogram .category:nth-child(8) {
+  .component5 .content .category:nth-child(8) {
     grid-area: 8/auto/9;
   }
 }
@@ -806,20 +780,16 @@
   .component6 {
     height: auto;
   }
-
   .component6 .content h1 {
     margin-top: 35px;
   }
-
   .component6 .content .categories {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr;
     min-width: 0;
     height: auto;
   }
-
-  .component6 .content .categories .category:nth-child(3) p,
-.component6 .content .categories .category:nth-child(4) p {
+  .component6 .content .categories .category:nth-child(3) p, .component6 .content .categories .category:nth-child(4) p {
     margin-bottom: 30px;
   }
 }
@@ -828,8 +798,7 @@
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
   }
-
-  .component6 .content .categories .category:nth-child(2) p {
+  .component6 .content .category:nth-child(2) p {
     margin-bottom: 30px;
   }
 }
@@ -979,42 +948,35 @@
 @media only screen and (max-width: 1279px) {
   .component7 .content {
     margin: auto;
-  }
-
-  .component7 .content .menu {
-    grid-template-columns: repeat(10, auto);
-  }
-
-  .component7 .content {
     max-width: 1170.24px;
     width: 95%;
   }
+  .component7 .content .menu {
+    grid-template-columns: repeat(10, auto);
+  }
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1279px) {
   .component7 .content .menu {
     grid-template-columns: repeat(5, auto) 150px;
     grid-template-rows: 1fr 1.5fr;
     align-items: center;
   }
-
   .component7 .content .menu button {
     grid-area: 1/6/3/7;
     margin: auto;
   }
-
-  .component7 .content .squares .square:hover .downside .whitebar h6 {
-    margin-top: 2px;
-  }
-
-  .component7 .content .squares .square:hover .downside .whitebar p {
+  .component7 .content .squares .square:hover .downside .whitebar h6,
+.component7 .content .squares .square:hover .downside .whitebar p {
     margin-top: 2px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .component7, .component7 .content {
+  .component7 {
     height: auto;
   }
-
+  .component7 .content {
+    height: auto;
+  }
   .component7 .content .menu {
     height: 100px;
     width: 100%;
@@ -1023,14 +985,12 @@
     justify-items: center;
     align-items: center;
   }
-
   .component7 .content .menu button {
     width: 122px;
     height: 26px;
     grid-area: 4/1/5/span 3;
     margin: auto;
   }
-
   .component7 .content .squares {
     min-height: 700px;
     height: auto;
@@ -1038,7 +998,6 @@
     grid-template-rows: repeat(4, 1fr);
     grid-auto-flow: column;
   }
-
   .component7 .content .squares .square {
     width: 95%;
     max-width: 300px;
@@ -1177,14 +1136,12 @@
   .component8 {
     height: auto;
   }
-
   .component8 .content {
     width: 95%;
     height: auto;
     grid-template-columns: auto;
     margin: auto;
   }
-
   .component8 .content .container {
     width: 100%;
     height: auto;
@@ -1193,7 +1150,7 @@
   }
 }
 @media only screen and (max-width: 1023px) {
-  .component8 .content .container p {
+  .component8 .content p {
     margin-bottom: 15px;
   }
 }
@@ -1201,17 +1158,264 @@
   .component8 .content > p {
     margin-top: 90px;
   }
-
   .component8 .content .container {
     margin-top: 100px;
   }
-
   .component8 .content .item {
     margin-top: 155px;
   }
-
   .component8 .content form {
     margin-top: 95px;
+  }
+}
+.component9 {
+  height: 881px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #353841;
+  overflow-y: hidden;
+}
+.component9 .content {
+  width: 1170px;
+  margin-right: 10px;
+}
+.component9 .content p,
+.component9 .content h1,
+.component9 .content h6 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.component9 .content h1 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 96px;
+}
+.component9 .content h1 span {
+  color: #26e2bd;
+  font-weight: 500;
+}
+.component9 .content > p {
+  font-size: 15px;
+  color: #e8e8e8;
+  margin-top: 6px;
+  line-height: 1.6;
+  margin-left: -2px;
+}
+.component9 .content .downside {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 570px 300px;
+}
+.component9 .content .downside i {
+  width: 50px;
+  height: 50px;
+  background-color: #26e2bd;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component9 .content .downside .leftside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 166px 167px auto;
+  margin-top: 130px;
+}
+.component9 .content .downside .leftside .item {
+  display: grid;
+  grid-template-columns: 250px 50px;
+  grid-template-rows: 50px 100px;
+  align-items: center;
+}
+.component9 .content .downside .leftside .item h6 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: end;
+  margin-right: 15px;
+}
+.component9 .content .downside .leftside .item p {
+  color: #e8e8e8;
+  font-size: 14px;
+  text-align: right;
+  grid-column: 1/3;
+  line-height: 1.73;
+  margin-top: -10px;
+}
+.component9 .content .downside .center {
+  width: 570px;
+  height: auto;
+  overflow-y: hidden;
+}
+.component9 .content .downside .center .phone {
+  width: 446px;
+  height: 655px;
+  background-color: #a1b1bc;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin: auto;
+  margin-top: 43px;
+}
+.component9 .content .downside .rightside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 166px 167px auto;
+  margin-top: 130px;
+}
+.component9 .content .downside .rightside .item {
+  display: grid;
+  grid-template-columns: 50px 250px;
+  grid-template-rows: 50px 100px;
+  align-items: center;
+}
+.component9 .content .downside .rightside .item h6 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: start;
+  margin-left: 10px;
+}
+.component9 .content .downside .rightside .item p {
+  color: #e8e8e8;
+  font-size: 14px;
+  text-align: left;
+  grid-column: 1/3;
+  line-height: 1.73;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .component9 .content .downside {
+    grid-template-columns: 300px auto 300px;
+  }
+  .component9 .content .downside .center {
+    width: 396px;
+    margin: auto;
+  }
+  .component9 .content .downside .center .phone {
+    max-width: 446px;
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .component9 {
+    height: auto;
+  }
+  .component9 .content .downside {
+    grid-template-columns: 300px 400px 300px;
+  }
+  .component9 .content .downside .center,
+.component9 .content .downside .phone,
+.component9 .content .downside .leftside,
+.component9 .content .downside .leftside .item {
+    overflow: unset;
+  }
+  .component9 .content .downside .leftside {
+    margin-left: 161px;
+    z-index: 0;
+  }
+  .component9 .content .downside .rightside {
+    margin-left: -161px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .component9 .content .downside {
+    grid-template-columns: 1fr;
+    grid-template-rows: 453px 435px;
+    margin-top: 20px;
+    height: auto;
+    justify-items: center;
+  }
+  .component9 .content .downside .center {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  .component9 .content .downside .center .leftside {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-template-rows: 143px 143px 143px;
+    height: auto;
+  }
+  .component9 .content .downside .center .leftside .item {
+    grid-template-columns: 50px 250px;
+  }
+  .component9 .content .downside .center .leftside .item i {
+    grid-area: 1/1/2/2;
+  }
+  .component9 .content .downside .center .leftside .item h6 {
+    grid-column: 2/3;
+  }
+  .component9 .content .downside .center .leftside .item img {
+    grid-area: 1/1/2/2;
+  }
+  .component9 .content .downside .center .leftside .item p, .component9 .content .downside .center .leftside .item h6 {
+    text-align: center;
+  }
+  .component9 .content .downside .center .rightside {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-template-rows: 143px 143px 143px;
+    height: auto;
+  }
+  .component9 .content .downside .center .rightside .item p, .component9 .content .downside .center .rightside .item h6 {
+    text-align: center;
+  }
+
+  .content .downside {
+    grid-template-columns: 1fr;
+    grid-template-rows: 453px 435px;
+    margin-top: 20px;
+    height: auto;
+    justify-items: center;
+  }
+
+  .component9 .content .downside .center {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  .component9 .content .downside .leftside {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-template-rows: 143px 143px 143px;
+    height: auto;
+  }
+
+  .component9 .content .downside .rightside {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-template-rows: 143px 143px 143px;
+    height: auto;
+  }
+
+  .component9 .content .downside .leftside .item {
+    grid-template-columns: 50px 250px;
+  }
+
+  .component9 .content .downside .leftside .item i {
+    grid-area: 1/1/2/2;
+  }
+
+  .component9 .content .downside .leftside .item h6 {
+    grid-column: 2/3;
+  }
+
+  .component9 .content .downside .leftside .item img {
+    grid-area: 1/1/2/2;
+  }
+
+  .component9 .content .downside .leftside .item p, .component9 .content .downside .leftside .item h6, .component9 .content .downside .rightside .item p, .component9 .content .downside .rightside .item h6 {
+    text-align: center;
   }
 }
 
