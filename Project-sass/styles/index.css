@@ -1267,26 +1267,26 @@
   justify-content: center;
   align-items: center;
 }
-.component9 .content .downside .leftside {
+.component9 .content .downside .leftside, .component9 .content .downside .rightside {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 166px 167px auto;
   margin-top: 130px;
 }
-.component9 .content .downside .leftside .item {
+.component9 .content .downside .leftside .item, .component9 .content .downside .rightside .item {
   display: grid;
   grid-template-columns: 250px 50px;
   grid-template-rows: 50px 100px;
   align-items: center;
 }
-.component9 .content .downside .leftside .item h6 {
+.component9 .content .downside .leftside .item h6, .component9 .content .downside .rightside .item h6 {
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
   text-align: end;
   margin-right: 15px;
 }
-.component9 .content .downside .leftside .item p {
+.component9 .content .downside .leftside .item p, .component9 .content .downside .rightside .item p {
   color: #e8e8e8;
   font-size: 14px;
   text-align: right;
@@ -1308,12 +1308,6 @@
   margin: auto;
   margin-top: 43px;
 }
-.component9 .content .downside .rightside {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 166px 167px auto;
-  margin-top: 130px;
-}
 .component9 .content .downside .rightside .item {
   display: grid;
   grid-template-columns: 50px 250px;
@@ -1321,19 +1315,11 @@
   align-items: center;
 }
 .component9 .content .downside .rightside .item h6 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
   text-align: start;
   margin-left: 10px;
 }
 .component9 .content .downside .rightside .item p {
-  color: #e8e8e8;
-  font-size: 14px;
   text-align: left;
-  grid-column: 1/3;
-  line-height: 1.73;
-  margin-top: -10px;
 }
 
 @media only screen and (max-width: 1279px) {
@@ -1359,10 +1345,12 @@
   .component9 .content .downside .center,
 .component9 .content .downside .phone,
 .component9 .content .downside .leftside,
-.component9 .content .downside .leftside .item {
+.component9 .content .downside .rightside,
+.component9 .content .downside .leftside .item,
+.component9 .content .downside .rightside .item {
     overflow: unset;
   }
-  .component9 .content .downside .leftside {
+  .component9 .content .downside .leftside, .component9 .content .downside .rightside {
     margin-left: 161px;
     z-index: 0;
   }
@@ -1383,26 +1371,26 @@
     height: 0;
     margin: 0;
   }
-  .component9 .content .downside .center .leftside {
+  .component9 .content .downside .center .leftside, .component9 .content .downside .center .rightside {
     margin: 0;
     grid-column: 1/2;
     grid-row: 1/2;
     grid-template-rows: 143px 143px 143px;
     height: auto;
   }
-  .component9 .content .downside .center .leftside .item {
+  .component9 .content .downside .center .leftside .item, .component9 .content .downside .center .rightside .item {
     grid-template-columns: 50px 250px;
   }
-  .component9 .content .downside .center .leftside .item i {
+  .component9 .content .downside .center .leftside .item i, .component9 .content .downside .center .rightside .item i {
     grid-area: 1/1/2/2;
   }
-  .component9 .content .downside .center .leftside .item h6 {
+  .component9 .content .downside .center .leftside .item h6, .component9 .content .downside .center .rightside .item h6 {
     grid-column: 2/3;
   }
-  .component9 .content .downside .center .leftside .item img {
+  .component9 .content .downside .center .leftside .item img, .component9 .content .downside .center .rightside .item img {
     grid-area: 1/1/2/2;
   }
-  .component9 .content .downside .center .leftside .item p, .component9 .content .downside .center .leftside .item h6 {
+  .component9 .content .downside .center .leftside .item p, .component9 .content .downside .center .rightside .item p, .component9 .content .downside .center .leftside .item h6, .component9 .content .downside .center .rightside .item h6 {
     text-align: center;
   }
   .component9 .content .downside .center .rightside {
@@ -1430,7 +1418,7 @@
     margin: 0;
   }
 
-  .component9 .content .downside .leftside {
+  .component9 .content .downside .leftside, .component9 .content .downside .rightside {
     margin: 0;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -1446,19 +1434,19 @@
     height: auto;
   }
 
-  .component9 .content .downside .leftside .item {
+  .component9 .content .downside .leftside .item, .component9 .content .downside .rightside .item {
     grid-template-columns: 50px 250px;
   }
 
-  .component9 .content .downside .leftside .item i {
+  .component9 .content .downside .leftside .item i, .component9 .content .downside .rightside .item i {
     grid-area: 1/1/2/2;
   }
 
-  .component9 .content .downside .leftside .item h6 {
+  .component9 .content .downside .leftside .item h6, .component9 .content .downside .rightside .item h6 {
     grid-column: 2/3;
   }
 
-  .component9 .content .downside .leftside .item img {
+  .component9 .content .downside .leftside .item img, .component9 .content .downside .rightside .item img {
     grid-area: 1/1/2/2;
   }
 
@@ -1469,6 +1457,8 @@
 .component10 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-items: unset;
 }
 .component10 .content {
   width: 1170px;
@@ -1815,7 +1805,7 @@
   grid-template-columns: 617px 620px;
   grid-template-rows: 1fr;
 }
-.component11 .content .downblock .leftside {
+.component11 .content .downblock .leftside, .component11 .component9 .content .downblock .downside .rightside, .component9 .component11 .content .downblock .downside .rightside, .component11 .component9 .content .downside .downblock .rightside, .component9 .component11 .content .downside .downblock .rightside {
   display: grid;
   grid-template-columns: 300px 300px;
   grid-template-rows: 86px 192px 1fr;
@@ -1873,7 +1863,7 @@
     width: 100%;
     grid-row: 1/2;
   }
-  .component11 .content .downblock .leftside {
+  .component11 .content .downblock .leftside, .component11 .component9 .content .downblock .downside .rightside, .component9 .component11 .content .downblock .downside .rightside, .component11 .component9 .content .downside .downblock .rightside, .component9 .component11 .content .downside .downblock .rightside {
     justify-content: center;
     z-index: 1;
     margin-top: -293px;
@@ -1928,7 +1918,7 @@
     overflow: visible;
     margin-top: -25%;
   }
-  .component11 .content .downblock .leftside {
+  .component11 .content .downblock .leftside, .component11 .component9 .content .downblock .downside .rightside, .component9 .component11 .content .downblock .downside .rightside, .component11 .component9 .content .downside .downblock .rightside, .component9 .component11 .content .downside .downblock .rightside {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     height: auto;
@@ -2072,6 +2062,8 @@
 .component13 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-items: unset;
   background-color: #2f313c;
 }
 .component13 .content {

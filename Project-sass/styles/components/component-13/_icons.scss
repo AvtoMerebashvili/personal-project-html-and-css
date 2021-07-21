@@ -1,0 +1,15 @@
+@mixin icons{
+    .icons {
+        display: grid;
+        grid-template-columns: 43px 49px 45px 51px 46px 49px 47px 50px 48px 50px 20px;
+        grid-template-rows: 1fr;
+        i {
+            color: $component13-h1-3-p;
+            font-size: 27px;
+            &:hover {
+                color: $component13-i-hover;
+                cursor: pointer;
+            }
+        }
+    }
+}

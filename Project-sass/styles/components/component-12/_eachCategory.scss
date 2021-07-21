@@ -1,0 +1,42 @@
+@mixin category{
+    .category {
+        display: grid;
+        grid-template-columns: 189px 25px 154px;
+        grid-template-rows: 115px 30px 30px 24px;
+        &:nth-child(5) {
+            grid-template-rows: 89px 30px 30px 24px;
+        }
+        &:nth-child(6) {
+            grid-template-rows: 89px 30px 30px 24px;
+        }
+        .quarter {
+            width: 170px;
+            height: 200px;
+            @include color("quarter");
+            grid-row: 1/ span 4;
+            &:hover {
+                background-color: #2C3E50;
+                cursor: pointer;
+            }
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2C3E50;
+            text-align: left;
+            grid-column: 2/span 2;
+            line-height: 1.5;
+            margin-top: -6px;
+            overflow-y: clip;
+        }
+        p {
+            font-size: 14px;
+            text-align: left;
+            @include color("p");
+        }
+        i {
+            @include color("green");
+            
+        }
+    }
+}

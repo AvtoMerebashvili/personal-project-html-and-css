@@ -1,5 +1,5 @@
+@import "squares";
 .component7 {
-
     background-color: $component7-bg;
     @include flex;
     align-items: unset;
@@ -63,81 +63,7 @@
                 }
             }
         }
-        .squares {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 200px);
-            margin-top: 50px;
-            .square {
-                width: 100%;
-                height: 100%;
-                .downside,
-                .img {
-                    width: 0;
-                    height: 0;
-                }
-                &:hover {
-                    cursor: pointer;
-                    .img {
-                        height: 130px;
-                        width: 100%;
-                        background-color: $component7-img;
-                        overflow-y: hidden;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                    .downside {
-                        height: 78px;
-                        width: 100%;
-                        overflow-y: hidden;
-                        margin-top: -8px;
-                        .triangleblock {
-                            height: 8px;
-                            width: 100%;
-                            background-color: transparent;
-                            .triangle {
-                                width: 0;
-                                height: 0;
-                                border-top: 0;
-                                border-left: 11px solid transparent;
-                                border-right: 11px solid transparent;
-                                border-bottom: 8px solid $component7-tingl-border-bottom;
-                                margin-left: 50%;
-                                transform: translateX(-50%);
-                            }
-                        }
-                        .whitebar {
-                            height: 70px;
-                            width: 100%;
-                            background-color: $component7-whitebar-bg;
-                            h6 {
-                                font-size: 15px;
-                                font-weight: 900;
-                                width: 100%;
-                                height: auto;
-                                color: $component7-h6;
-                                margin-top: 18px;
-                                letter-spacing: 3px;
-                            }
-                            p {
-                                font-size: 12px;
-                                width: 100%;
-                                height: auto;
-                                margin-top: 5px;
-                                letter-spacing: 1px;
-                            }
-                        }
-                    }
-                }
-            }
-            .light {
-                background-color: $component7-light;
-            }
-            .dark {
-                background-color: $component7-dark;
-            }
-        }
+        @include squares;
     }
 }
 

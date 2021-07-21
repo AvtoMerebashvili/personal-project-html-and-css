@@ -2,10 +2,10 @@
 @import "textarea";
 @import "button";
 @import "./dots/dots";
-
+@import "icons";
 .component13 {
-    display: flex;
-    justify-content: center;
+    @include flex;
+    align-items: unset;
     background-color: $component13-bg;
     .content {
         width: 1170px;
@@ -15,7 +15,7 @@
         grid-template-rows: 1fr;
         margin: 90px 11px 0 0;
         h1, h3, p{
-            font-family: "Lato", sans-serif;
+            @include Lato;
             text-align: left;
         }
         h1{
@@ -27,7 +27,6 @@
             color: $component13-h1-3-p;
         }
         p {
-           
             color: $component13-h1-3-p;
             font-size: 14px;
             line-height: 1.75;
@@ -39,19 +38,7 @@
             h1 {
                 margin-left: -3px;
             }
-            .icons {
-                display: grid;
-                grid-template-columns: 43px 49px 45px 51px 46px 49px 47px 50px 48px 50px 20px;
-                grid-template-rows: 1fr;
-                i {
-                    color: $component13-h1-3-p;
-                    font-size: 27px;
-                    &:hover {
-                        color: $component13-i-hover;
-                        cursor: pointer;
-                    }
-                }
-            }
+            @include icons;
             form {
                 input {
                   @include input;

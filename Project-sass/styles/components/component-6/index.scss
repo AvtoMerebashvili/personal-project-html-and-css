@@ -1,22 +1,4 @@
-$imgmargins: (
-    1: 48px 5% 0 0,
-    2: 45px 4% 0 0,
-    3: 48px 4% 0 0,
-    4: 49px 5% 0 0,
-);
-$h4margins: (
-    1: 41px 2% 0 0,
-    2: 40px 2% 0 0,
-    3: 42px 2% 0 0,
-    4: 42px 2% 0 0,
-);
-$pmargins: (
-    1: 17px 3% 0 0,
-    2: 16px 3% 0 0,
-    3: 16px 3% 0 0,
-    4: 16px 3% 0 0,
-);
-
+@import "margins";
 .component6 {
     max-width: 1920px;
     overflow-y: hidden;

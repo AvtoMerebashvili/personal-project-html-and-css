@@ -1,9 +1,11 @@
 @import "gradient";
 @import "button";
 @import "cellBg";
+@import "advertise";
+
 .component10 {
-	display: flex;
-	justify-content: center;
+	@include flex;
+	align-items: unset;
 	.content {
 		width: 1170px;
 		height: auto;
@@ -123,44 +125,7 @@
 				}
 			}
 		}
-		.advertise {
-			height: 150px;
-			width: 100%;
-			margin: 98px 0 0 0;
-			display: grid;
-			grid-template-columns: 23px 1fr 270px;
-			grid-template-rows: 1fr;
-			align-items: center;
-			justify-items: center;
-			border: 1px solid #EAEBEC;
-			.greencolumn {
-				width: 10px;
-				height: 140px;
-				background-color: #1ABC9C;
-			}
-			.info {
-				width: 100%;
-				height: 100%;
-				padding: 23px;
-				h3 {
-					font-size: 24px;
-					font-weight: 300;
-					color: #2C3E50;
-					text-align: left;
-					margin-top: 6px;
-				}
-				p {
-					font-size: 14px;
-					color: #A1B1BC;
-					text-align: left;
-					margin-top: 11px;
-					line-height: 1.7;
-					// letter-spacing: 1.px;
-					word-spacing: 1.3px;
-				}
-			}
-			@include butt("large");
-		}
+		@include advertise;
 	}
 }
 
